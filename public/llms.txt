@@ -1,5 +1,5 @@
 # CareeRepo Malaysia (https://github.com/pwntable/career-repo)
-> Official Corporate Career & Internship Directory in Malaysia (86 Verified Employers)
+> Official Corporate Career & Internship Directory in Malaysia (87 Verified Employers)
 
 ## Project Overview
 CareeRepo MY is a machine-readable directory providing direct, verified links to official career, internship, and graduate trainee portals of MNCs, GLCs, statutory bodies, and tech companies operating in Malaysia.
@@ -16,7 +16,7 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - Government & Statutory Bodies
 - Fintech & Startups
 
-## Company Directory Index (86 Portals)
+## Company Directory Index (87 Portals)
 - [Microsoft](https://careers.microsoft.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Google](https://careers.google.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [IBM](https://www.ibm.com/careers/): Technology | MNC | Cyberjaya (ATS: Custom Corporate Portal)
@@ -103,3 +103,4 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - [Cenviro](https://www.cenviro.com/careers/): Environmental | GLC | Bukit Pelanduk, Negeri Sembilan (ATS: Custom Corporate Portal)
 - [EY (Ernst & Young)](https://www.ey.com/en_my/careers): Consulting | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Deloitte](https://jobs.sea.deloitte.com/): Consulting | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [KL Foodie](https://klfoodie.com/careers/): Media | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)

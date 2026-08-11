@@ -1718,5 +1718,25 @@
     "is_featured": true,
     "updated_at": "2026-08-01",
     "ats_type": "Custom Corporate Portal"
+  },
+  {
+    "id": "87",
+    "name": "KL Foodie",
+    "slug": "kl-foodie",
+    "category": "Media",
+    "industry": "Digital Media & Content Publishing",
+    "country": "Malaysia",
+    "company_type": "Local Company",
+    "location": "Kuala Lumpur",
+    "logo_bg": "#ff4d4d",
+    "initials": "KLF",
+    "career_url": "https://klfoodie.com/careers/",
+    "internship_url": "https://klfoodie.com/careers/",
+    "graduate_url": null,
+    "description": "Malaysia's premier digital food and lifestyle media platform producing viral food guides, video content, and local dining recommendations.",
+    "is_verified": true,
+    "is_featured": true,
+    "updated_at": "2026-08-12",
+    "ats_type": "Custom Corporate Portal"
   }
 ]

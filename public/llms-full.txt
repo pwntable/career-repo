@@ -1,6 +1,6 @@
 # CareeRepo Malaysia - Full Machine-Readable Directory
 
-This file contains full structured text specs for all 86 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
+This file contains full structured text specs for all 87 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
 
 ### 1. Microsoft (MNC)
 - **Category:** Technology
@@ -947,4 +947,15 @@ This file contains full structured text specs for all 86 verified corporate care
 - **Graduate Trainee Portal:** https://jobs.sea.deloitte.com/go/Students-and-Graduates/8501201/
 - **Verified:** Yes
 - **Description:** Global professional services network delivering audit, consulting, financial advisory, and risk management.
+
+### 87. KL Foodie (Local Company)
+- **Category:** Media
+- **Industry:** Digital Media & Content Publishing
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://klfoodie.com/careers/
+- **Internship Portal:** https://klfoodie.com/careers/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Malaysia's premier digital food and lifestyle media platform producing viral food guides, video content, and local dining recommendations.
 
