@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Malaysia | Official Corporate Career & Internship Directory</title>
+    <meta name="description" content="Discover official career and internship portals from 86+ leading companies and MNCs in Malaysia. Directly access verified application links.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-header { backdrop-filter: blur(8px); }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const SEED_COMPANIES = [
+            {
+                id: "1", name: "Microsoft", slug: "microsoft", category: "Technology", industry: "Software & Cloud",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#00a4ef", initials: "MS",
+                career_url: "https://careers.microsoft.com/", internship_url: "https://careers.microsoft.com/v2/global/en/students", graduate_url: "https://careers.microsoft.com/v2/global/en/students",
+                description: "Global technology leader in software, cloud computing, and AI solutions with strong operational presence in Malaysia.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "2", name: "Google", slug: "google", category: "Technology", industry: "Internet & Technology",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#ea4335", initials: "GO",
+                career_url: "https://careers.google.com/", internship_url: "https://careers.google.com/students/", graduate_url: "https://careers.google.com/students/",
+                description: "Multinational technology company specializing in search, cloud technology, online advertising, and hardware.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "3", name: "IBM", slug: "ibm", category: "Technology", industry: "IT Services & Consulting",
+                country: "Malaysia", company_type: "MNC", location: "Cyberjaya", logo_bg: "#052192", initials: "IBM",
+                career_url: "https://www.ibm.com/careers/", internship_url: "https://www.ibm.com/employment/entrylevel/", graduate_url: "https://www.ibm.com/employment/entrylevel/",
+                description: "Global hybrid cloud and AI infrastructure enterprise provider with extensive global delivery centers in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "4", name: "Intel", slug: "intel", category: "Technology", industry: "Semiconductor",
+                country: "Malaysia", company_type: "MNC", location: "Penang / Kulim", logo_bg: "#0068b5", initials: "INT",
+                career_url: "https://jobs.intel.com/", internship_url: "https://jobs.intel.com/en/students-and-graduates/", graduate_url: "https://jobs.intel.com/en/students-and-graduates/",
+                description: "World-leading semiconductor design and manufacturing corporation with major advanced packaging hubs in Penang and Kulim.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "5", name: "Dell Technologies", slug: "dell-technologies", category: "Technology", industry: "Hardware & IT Systems",
+                country: "Malaysia", company_type: "MNC", location: "Penang / Cyberjaya", logo_bg: "#007db8", initials: "DELL",
+                career_url: "https://jobs.dell.com/", internship_url: "https://jobs.dell.com/students", graduate_url: "https://jobs.dell.com/students",
+                description: "Global technology leader providing hardware solutions, enterprise cloud infrastructure, and IT services.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "6", name: "HP", slug: "hp", category: "Technology", industry: "Hardware & Electronics",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#0096d6", initials: "HP",
+                career_url: "https://jobs.hp.com/", internship_url: "https://jobs.hp.com/students", graduate_url: null,
+                description: "Global personal systems and printing technologies provider with operations across Southeast Asia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "7", name: "Oracle", slug: "oracle", category: "Technology", industry: "Software & Cloud",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#c74634", initials: "ORC",
+                career_url: "https://careers.oracle.com/", internship_url: "https://careers.oracle.com/students-graduates/", graduate_url: "https://careers.oracle.com/students-graduates/",
+                description: "Enterprise software, cloud infrastructure, and database technology provider.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "8", name: "Accenture", slug: "accenture", category: "Consulting", industry: "IT & Consulting",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#a100ff", initials: "ACN",
+                career_url: "https://www.accenture.com/my-en/careers", internship_url: "https://www.accenture.com/my-en/careers/students-graduates", graduate_url: "https://www.accenture.com/my-en/careers/students-graduates",
+                description: "Leading global professional services company specializing in digital, cloud, and cybersecurity transformation.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "9", name: "Huawei", slug: "huawei", category: "Telecommunications", industry: "Telecom & Hardware",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#cf0a2c", initials: "HW",
+                career_url: "https://career.huawei.com/", internship_url: "https://career.huawei.com/reccamcode/portal/campus/campus_job.html", graduate_url: "https://career.huawei.com/reccamcode/portal/campus/campus_job.html",
+                description: "Leading global provider of information and communications technology (ICT) infrastructure and smart devices.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "10", name: "SAP", slug: "sap", category: "Technology", industry: "Enterprise Software",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#008fd3", initials: "SAP",
+                career_url: "https://jobs.sap.com/", internship_url: "https://jobs.sap.com/content/Students-and-Graduates/", graduate_url: "https://jobs.sap.com/content/Students-and-Graduates/",
+                description: "World market leader in enterprise application software and enterprise resource planning systems.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "11", name: "Shell Malaysia", slug: "shell-malaysia", category: "Oil & Gas", industry: "Energy & Petrochemicals",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Cyberjaya", logo_bg: "#dd1d21", initials: "SHL",
+                career_url: "https://shell.wd3.myworkdayjobs.com/shellcareers?source=APPLICANT_SOURCE_Malaysia_Local_Page&locationCountry=972dc4ba8d454bc0b893ff84b1529077",
+                internship_url: "https://www.shell.com.my/careers/students-and-graduates/internships.html",
+                graduate_url: "https://www.shell.com.my/careers/students-and-graduates/shell-graduate-programme.html",
+                description: "Global energy and petrochemical group operating in Malaysia for over a century across upstream and downstream.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "12", name: "ExxonMobil", slug: "exxonmobil", category: "Oil & Gas", industry: "Energy",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#000000", initials: "XOM",
+                career_url: "https://jobs.exxonmobil.com/", internship_url: "https://jobs.exxonmobil.com/content/Students-and-Graduates/", graduate_url: "https://jobs.exxonmobil.com/content/Students-and-Graduates/",
+                description: "One of the largest publicly traded international energy and chemical companies.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "13", name: "SLB", slug: "slb", category: "Oil & Gas", industry: "Energy Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#001e60", initials: "SLB",
+                career_url: "https://careers.slb.com/", internship_url: "https://careers.slb.com/early-careers", graduate_url: "https://careers.slb.com/early-careers",
+                description: "Global technology company driving energy innovation through reservoir characterization, drilling, and production.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "14", name: "Halliburton", slug: "halliburton", category: "Oil & Gas", industry: "Energy Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#cc0000", initials: "HAL",
+                career_url: "https://jobs.halliburton.com/", internship_url: "https://jobs.halliburton.com/go/Students-and-Graduates/8501201/", graduate_url: null,
+                description: "Worldwide provider of products and services to the energy industry.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "15", name: "Baker Hughes", slug: "baker-hughes", category: "Oil & Gas", industry: "Energy Technology",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#004b49", initials: "BKR",
+                career_url: "https://careers.bakerhughes.com/", internship_url: "https://careers.bakerhughes.com/global/en/students-graduates", graduate_url: "https://careers.bakerhughes.com/global/en/students-graduates",
+                description: "Energy technology company providing solutions for energy and industrial customers worldwide.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "16", name: "Technip Energies", slug: "technip-energies", category: "Engineering", industry: "Energy Engineering",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#102a45", initials: "T.EN",
+                career_url: "https://careers.technipenergies.com/", internship_url: null, graduate_url: null,
+                description: "Engineering & technology company for the energy transition, with leadership in LNG, hydrogen, and sustainable chemistry.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "17", name: "Nestlé Malaysia", slug: "nestle-malaysia", category: "FMCG", industry: "Food & Beverages",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#005a9c", initials: "NES",
+                career_url: "https://www.nestle.com.my/jobs", internship_url: "https://www.nestle.com.my/jobs/students", graduate_url: "https://www.nestle.com.my/jobs/graduates",
+                description: "Malaysia's leading Halal food and beverage manufacturer with iconic brands including MILO, MAGGI, and Nescafé.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "18", name: "Unilever", slug: "unilever", category: "FMCG", industry: "Consumer Goods",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#1f36c7", initials: "UL",
+                career_url: "https://careers.unilever.com/", internship_url: "https://careers.unilever.com/internships", graduate_url: "https://careers.unilever.com/unilever-future-leaders-programme",
+                description: "Multinational consumer goods giant producing leading personal care, home care, and food brands.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "19", name: "Coca-Cola", slug: "coca-cola", category: "FMCG", industry: "Beverages",
+                country: "Malaysia", company_type: "MNC", location: "Bandar Enstek, Negeri Sembilan", logo_bg: "#f40009", initials: "KO",
+                career_url: "https://careers.coca-colacompany.com/", internship_url: null, graduate_url: null,
+                description: "Total beverage company offering over 500 brands in more than 200 countries.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "20", name: "PepsiCo", slug: "pepsico", category: "FMCG", industry: "Food & Beverages",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#00519e", initials: "PEP",
+                career_url: "https://www.pepsicojobs.com/", internship_url: "https://www.pepsicojobs.com/main/campus", graduate_url: "https://www.pepsicojobs.com/main/campus",
+                description: "Global food and beverage leader with a portfolio including Lay's, Doritos, Cheetos, Gatorade, Pepsi, and Quaker.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "21", name: "Mondelez International", slug: "mondelez-international", category: "FMCG", industry: "Snack Foods",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Shah Alam", logo_bg: "#4d2179", initials: "MDLZ",
+                career_url: "https://careers.mondelezinternational.com/", internship_url: "https://careers.mondelezinternational.com/early-careers", graduate_url: "https://careers.mondelezinternational.com/early-careers",
+                description: "Global snacking powerhouse behind Cadbury, Oreo, Chips Ahoy!, and Jacob's.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "22", name: "Procter & Gamble (P&G)", slug: "procter-and-gamble", category: "FMCG", industry: "Consumer Goods",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#003a70", initials: "PG",
+                career_url: "https://www.pgcareers.com/", internship_url: "https://www.pgcareers.com/students", graduate_url: "https://www.pgcareers.com/students",
+                description: "Global consumer health and personal care giant home to Pampers, Tide, Pantene, Gillette, and Oral-B.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "23", name: "L'Oréal", slug: "loreal", category: "FMCG", industry: "Beauty & Cosmetics",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#e2001a", initials: "LOR",
+                career_url: "https://careers.loreal.com/", internship_url: "https://careers.loreal.com/en/m/students", graduate_url: "https://careers.loreal.com/en/m/students",
+                description: "World's leading beauty company spanning cosmetics, skincare, hair care, and fragrances.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "24", name: "Danone", slug: "danone", category: "FMCG", industry: "Food & Nutrition",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#004890", initials: "DAN",
+                career_url: "https://careers.danone.com/", internship_url: "https://careers.danone.com/en/students-graduates/", graduate_url: "https://careers.danone.com/en/students-graduates/",
+                description: "Leading multi-local food and beverage company focused on health-focused nutrition.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "25", name: "Samsung", slug: "samsung", category: "Technology", industry: "Electronics & Tech",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Seremban", logo_bg: "#1428a0", initials: "SEC",
+                career_url: "https://www.samsung.com/my/about-us/careers/", internship_url: "https://www.samsung.com/my/about-us/careers/", graduate_url: null,
+                description: "Global innovator in electronics, consumer tech, smartphones, semiconductors, and home appliances.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "26", name: "Sony", slug: "sony", category: "Technology", industry: "Electronics & Entertainment",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Bangi", logo_bg: "#000000", initials: "SNY",
+                career_url: "https://www.sonyjobs.com/", internship_url: null, graduate_url: null,
+                description: "Creative entertainment and consumer electronics manufacturer with high tech design hubs in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "27", name: "Panasonic", slug: "panasonic", category: "Technology", industry: "Electronics",
+                country: "Malaysia", company_type: "MNC", location: "Shah Alam, Selangor", logo_bg: "#004098", initials: "PAN",
+                career_url: "https://careers.apac.panasonic.com/", internship_url: null, graduate_url: null,
+                description: "Diversified electronics and home appliances manufacturing operations across Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "28", name: "Bosch", slug: "bosch", category: "Engineering", industry: "Engineering & Auto Tech",
+                country: "Malaysia", company_type: "MNC", location: "Penang / Petaling Jaya", logo_bg: "#ea1d25", initials: "BSH",
+                career_url: "https://www.bosch.com/careers/", internship_url: "https://www.bosch.com/careers/students/", graduate_url: "https://www.bosch.com/careers/graduates/",
+                description: "Leading global supplier of technology and services in mobility, industrial tech, and consumer goods.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "29", name: "Siemens", slug: "siemens", category: "Engineering", industry: "Industrial Automation & Energy",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#009999", initials: "SIE",
+                career_url: "https://jobs.siemens.com/", internship_url: "https://jobs.siemens.com/jobs?page=1&categories=Students%20%26%20Graduates", graduate_url: "https://jobs.siemens.com/jobs?page=1&categories=Students%20%26%20Graduates",
+                description: "Technology company focused on industry, infrastructure, transport, and healthcare digitalization.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "30", name: "Western Digital", slug: "western-digital", category: "Technology", industry: "Semiconductor & Storage",
+                country: "Malaysia", company_type: "MNC", location: "Penang / Johor / Kuching", logo_bg: "#002d62", initials: "WDC",
+                career_url: "https://jobs.smartrecruiters.com/WesternDigital", internship_url: "https://www.westerndigital.com/company/careers/university-relations", graduate_url: null,
+                description: "Data infrastructure manufacturer driving storage innovation in flash memory and hard drives.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "31", name: "Micron Technology", slug: "micron-technology", category: "Semiconductor", industry: "Memory & Storage",
+                country: "Malaysia", company_type: "MNC", location: "Penang / Batu Kawan", logo_bg: "#003b71", initials: "MU",
+                career_url: "https://micron.eightfold.ai/careers", internship_url: "https://micron.eightfold.ai/careers?domain=micron.com&query=intern", graduate_url: "https://micron.eightfold.ai/careers?domain=micron.com&query=university",
+                description: "Global leader in innovative memory and storage solutions accelerating advanced computing.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "32", name: "Toyota", slug: "toyota", category: "Automotive", industry: "Automotive Manufacturing",
+                country: "Malaysia", company_type: "MNC", location: "Shah Alam, Selangor", logo_bg: "#eb0a1e", initials: "TYT",
+                career_url: "https://career.toyota.com.my/", internship_url: null, graduate_url: null,
+                description: "Automotive pioneer and market leader delivering vehicle assembly, mobility solutions, and distribution in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "33", name: "Honda Malaysia", slug: "honda-malaysia", category: "Automotive", industry: "Automotive Manufacturing",
+                country: "Malaysia", company_type: "Local Company", location: "Melaka / Petaling Jaya", logo_bg: "#cc0000", initials: "HND",
+                career_url: "https://www.honda.com.my/careers", internship_url: null, graduate_url: null,
+                description: "Leading automotive manufacturing and distribution joint venture providing popular passenger vehicles.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "34", name: "BMW", slug: "bmw", category: "Automotive", industry: "Automotive & Mobility",
+                country: "Malaysia", company_type: "MNC", location: "Cyberjaya / Kulim", logo_bg: "#0066b1", initials: "BMW",
+                career_url: "https://www.bmwgroup.jobs/", internship_url: "https://www.bmwgroup.jobs/de/en/students.html", graduate_url: "https://www.bmwgroup.jobs/de/en/graduates.html",
+                description: "Premium automobile and motorcycle manufacturer with regional shared service hubs in Cyberjaya.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "35", name: "Mercedes-Benz", slug: "mercedes-benz", category: "Automotive", industry: "Automotive & Mobility",
+                country: "Malaysia", company_type: "MNC", location: "Puchong / Pekan, Pahang", logo_bg: "#000000", initials: "MB",
+                career_url: "https://group.mercedes-benz.com/careers/", internship_url: null, graduate_url: null,
+                description: "Luxury vehicle automaker with vehicle assembly and customer services regional hubs in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "36", name: "Volvo", slug: "volvo", category: "Automotive", industry: "Automotive & Heavy Equipment",
+                country: "Malaysia", company_type: "MNC", location: "Shah Alam, Selangor", logo_bg: "#00205b", initials: "VOL",
+                career_url: "https://jobs.volvogroup.com/", internship_url: null, graduate_url: null,
+                description: "Commercial transportation and premium automotive assembly manufacturer.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "37", name: "HSBC", slug: "hsbc", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#db0011", initials: "HSBC",
+                career_url: "https://portal.careers.hsbc.com/careers", internship_url: "https://www.hsbc.com/careers/students-and-graduates", graduate_url: "https://www.hsbc.com/careers/students-and-graduates",
+                description: "One of the world's largest banking and financial service organizations with established Islamic and retail banking in Malaysia.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "38", name: "Standard Chartered", slug: "standard-chartered", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Bukit Jalil", logo_bg: "#007a33", initials: "STAN",
+                career_url: "https://www.sc.com/en/global-careers/", internship_url: "https://www.sc.com/en/global-careers/early-careers/", graduate_url: "https://www.sc.com/en/global-careers/early-careers/",
+                description: "Leading international bank with over 145 years of continuous operational history in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "39", name: "Citibank", slug: "citibank", category: "Banking", industry: "Investment & Retail Banking",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur / Penang", logo_bg: "#003b70", initials: "CITI",
+                career_url: "https://jobs.citi.com/", internship_url: "https://jobs.citi.com/students", graduate_url: "https://jobs.citi.com/students",
+                description: "Global banking partner for institutions with high-value global processing centers in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "40", name: "UOB", slug: "uob", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#0f204b", initials: "UOB",
+                career_url: "https://www.uobgroup.com/careers/", internship_url: "https://www.uobgroup.com/careers/students-and-graduates/index.html", graduate_url: "https://www.uobgroup.com/careers/students-and-graduates/index.html",
+                description: "Leading regional bank in Asia offering comprehensive commercial banking, wealth, and treasury services.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "41", name: "OCBC", slug: "ocbc", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#ea1c24", initials: "OCBC",
+                career_url: "https://www.ocbc.com/group/careers", internship_url: "https://www.ocbc.com/group/careers/students-and-graduates", graduate_url: "https://www.ocbc.com/group/careers/students-and-graduates",
+                description: "Second largest financial services group in Southeast Asia by assets.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "42", name: "AIA", slug: "aia", category: "Insurance", industry: "Life Insurance & Financial Services",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#d31145", initials: "AIA",
+                career_url: "https://careers.aia.com/", internship_url: "https://careers.aia.com/content/Students-and-Graduates/", graduate_url: "https://careers.aia.com/content/Students-and-Graduates/",
+                description: "Largest independent publicly listed pan-Asian life insurance group.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "43", name: "Prudential", slug: "prudential", category: "Insurance", industry: "Insurance & Wealth Management",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#ed1b2d", initials: "PRU",
+                career_url: "https://careers.prudentialplc.com/", internship_url: null, graduate_url: null,
+                description: "Asia-focused life insurance and asset management company serving millions of customers.",
+                is_verified: true, is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "44", name: "Pfizer", slug: "pfizer", category: "Healthcare", industry: "Pharmaceuticals",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#0000ff", initials: "PFE",
+                career_url: "https://www.pfizer.com/about/careers", internship_url: "https://www.pfizer.com/about/careers/early-careers", graduate_url: null,
+                description: "Global biopharmaceutical corporation focused on breakthroughs that change patients' lives.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "45", name: "AstraZeneca", slug: "astrazeneca", category: "Healthcare", industry: "Biopharmaceuticals",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#830051", initials: "AZ",
+                career_url: "https://careers.astrazeneca.com/", internship_url: "https://careers.astrazeneca.com/early-talent", graduate_url: "https://careers.astrazeneca.com/early-talent",
+                description: "Global, science-led biopharmaceutical business focusing on prescription medicines across oncology and rare diseases.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "46", name: "Novartis", slug: "novartis", category: "Healthcare", industry: "Pharmaceuticals",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#0460a9", initials: "NVS",
+                career_url: "https://www.novartis.com/careers", internship_url: "https://www.novartis.com/careers/early-careers", graduate_url: null,
+                description: "Innovative medicine company using science and digital technology to create transformative treatments.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "47", name: "Roche", slug: "roche", category: "Healthcare", industry: "Pharmaceuticals & Diagnostics",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#0066cc", initials: "RCH",
+                career_url: "https://careers.roche.com/", internship_url: "https://careers.roche.com/global/en/students", graduate_url: null,
+                description: "Pioneer in pharmaceuticals and diagnostics focused on advancing science to improve lives.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "48", name: "B. Braun", slug: "b-braun", category: "Healthcare", industry: "Medical Technology",
+                country: "Malaysia", company_type: "MNC", location: "Penang", logo_bg: "#008754", initials: "BB",
+                career_url: "https://www.bbraun.com/en/careers.html", internship_url: "https://www.bbraun.com/en/careers/students.html", graduate_url: null,
+                description: "Leading medical technology and pharmaceutical solutions manufacturer with major production campus in Penang.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "49", name: "Abbott", slug: "abbott", category: "Healthcare", industry: "Medical Devices & Nutrition",
+                country: "Malaysia", company_type: "MNC", location: "Petaling Jaya, Selangor", logo_bg: "#0096d6", initials: "ABT",
+                career_url: "https://www.jobs.abbott/", internship_url: "https://www.jobs.abbott/us/en/students", graduate_url: null,
+                description: "Global healthcare leader helping people live more fully at all stages of life through medical products.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "50", name: "Bank Simpanan Nasional (BSN)", slug: "bank-simpanan-nasional", category: "Banking", industry: "Retail Banking",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#0072ce", initials: "BSN",
+                career_url: "https://bsn.jotform.com/260141204588452", internship_url: null, graduate_url: null,
+                description: "Malaysia's national savings bank committed to financial inclusion and accessible banking services.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "51", name: "PETRONAS", slug: "petronas", category: "Oil & Gas", industry: "Energy & Chemical Conglomerate",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#00a396", initials: "PET",
+                career_url: "https://careers.petronas.com/", internship_url: "https://careers.petronas.com/content/Students-and-Graduates/?locale=en_US", graduate_url: "https://careers.petronas.com/content/Students-and-Graduates/?locale=en_US",
+                description: "Malaysia's Fortune Global 500 energy company leading upstream, downstream, and sustainable energy projects.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "52", name: "KWSP (EPF)", slug: "kwsp", category: "Government", industry: "Statutory Body & Pension",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur / Kwasa Damansara", logo_bg: "#2b3990", initials: "KWSP",
+                career_url: "https://www.kwsp.gov.my/en/corporate/careers", internship_url: null, graduate_url: null,
+                description: "Employees Provident Fund - Premier social security organization managing retirement savings for private sector employees.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "53", name: "Setel", slug: "setel", category: "Fintech", industry: "Digital Mobility & Payments",
+                country: "Malaysia", company_type: "Startup", location: "Kuala Lumpur", logo_bg: "#00c3af", initials: "STL",
+                career_url: "https://boards.briohr.com/setel-n2dr1eygaj", internship_url: "https://boards.briohr.com/setel-n2dr1eygaj", graduate_url: null,
+                description: "Malaysia's premier e-wallet and e-payment app ecosystem for fuel, parking, EV charging, and retail.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "54", name: "BHP", slug: "bhp", category: "Oil & Gas", industry: "Mining & Energy",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#e23724", initials: "BHP",
+                career_url: "https://careers.bhp.com/search/", internship_url: "https://careers.bhp.com/content/Global-Graduate-Program/", graduate_url: "https://careers.bhp.com/content/Global-Graduate-Program/",
+                description: "Global resources company extracting and processing minerals, oil, and gas with global technology services in KL.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "55", name: "Petron", slug: "petron", category: "Oil & Gas", industry: "Energy & Refining",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur / Port Dickson", logo_bg: "#002060", initials: "PTN",
+                career_url: "https://www.petron.com.my/careers/", internship_url: null, graduate_url: null,
+                description: "Major oil refining and marketing company operating a vast service station network in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "56", name: "KWAP", slug: "kwap", category: "Government", industry: "Statutory Investment Fund",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur", logo_bg: "#0d47a1", initials: "KWP",
+                career_url: "https://career.kwap.my/", internship_url: null, graduate_url: null,
+                description: "Kumpulan Wang Persaraan (Diperbadankan) - Pension fund manager managing public service retirement contributions.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "57", name: "Maybank", slug: "maybank", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#ffc20e", initials: "MBB",
+                career_url: "https://maybankjobs.com/#/home", internship_url: "https://maybankjobs.com/#/student-and-graduates", graduate_url: "https://maybankjobs.com/#/student-and-graduates",
+                description: "Malaysia's largest financial services group and one of ASEAN's top banking groups.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "58", name: "RHB Bank", slug: "rhb-bank", category: "Banking", industry: "Banking & Financial Services",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#0072ce", initials: "RHB",
+                career_url: "https://rhb.wd102.myworkdayjobs.com/RHBExternalCareerSite", internship_url: "https://www.rhbgroup.com/careers/young-talents/index.html", graduate_url: "https://www.rhbgroup.com/careers/young-talents/index.html",
+                description: "Fully integrated financial services group offering retail, corporate, and investment banking.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "59", name: "Public Bank", slug: "public-bank", category: "Banking", industry: "Retail Banking",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#c8102e", initials: "PBB",
+                career_url: "https://www.publicbankgroup.com/careers/public-bank-berhad-career-with-us/", internship_url: null, graduate_url: null,
+                description: "Top premier retail bank known for exceptional financial stability and widespread local branch footprint.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "60", name: "Hong Leong Bank", slug: "hong-leong-bank", category: "Banking", industry: "Banking & Finance",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#002b66", initials: "HLB",
+                career_url: "https://hlb.wd3.myworkdayjobs.com/HLBCareers", internship_url: "https://www.hlb.com.my/en/personal-banking/about-us/careers/young-talents.html", graduate_url: "https://www.hlb.com.my/en/personal-banking/about-us/careers/young-talents.html",
+                description: "Major regional bank providing technology-driven digital banking and wealth solutions.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "61", name: "AHB Holdings", slug: "ahb-holdings", category: "Investment", industry: "Commercial Solutions & Furniture",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#333333", initials: "AHB",
+                career_url: "http://www.ahbholdings.com.my/careers.php", internship_url: null, graduate_url: null,
+                description: "Publicly listed investment holding company specializing in premium office interior solutions.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "62", name: "ASB (Amanah Saham Nasional)", slug: "asb", category: "Investment", industry: "Wealth & Asset Management",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#0055a5", initials: "PNB",
+                career_url: "https://www.pnb.com.my/careers.php", internship_url: "https://www.pnb.com.my/careers.php", graduate_url: null,
+                description: "Amanah Saham Nasional Berhad under Permodalan Nasional Berhad (PNB) unit trust fund manager.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "63", name: "Bank Negara Malaysia (BNM)", slug: "bank-negara-malaysia", category: "Government", industry: "Central Bank",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur", logo_bg: "#003865", initials: "BNM",
+                career_url: "https://www.bnm.gov.my/careers", internship_url: "https://www.bnm.gov.my/careers/internship", graduate_url: "https://www.bnm.gov.my/careers/graduate-programme",
+                description: "Central Bank of Malaysia responsible for monetary stability and financial sector development.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "64", name: "Versa", slug: "versa", category: "Fintech", industry: "Wealthtech & Savings",
+                country: "Malaysia", company_type: "Fintech", location: "Kuala Lumpur", logo_bg: "#6366f1", initials: "VSA",
+                career_url: "https://versa.com.my/careers/", internship_url: null, graduate_url: null,
+                description: "Digital wealth management app democratizing financial investments and high-yield cash accounts.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "65", name: "MicroLEAP", slug: "microleap", category: "Fintech", industry: "Peer-to-Peer Financing",
+                country: "Malaysia", company_type: "Fintech", location: "Kuala Lumpur", logo_bg: "#0d9488", initials: "MLP",
+                career_url: "https://microleapasia.com/careers", internship_url: null, graduate_url: null,
+                description: "Shariah-compliant P2P micro-financing platform supporting Malaysian micro & small businesses.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "66", name: "Khazanah Nasional", slug: "khazanah-nasional", category: "Investment", industry: "Sovereign Wealth Fund",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur", logo_bg: "#002060", initials: "KZN",
+                career_url: "https://www.khazanah.com.my/for-malaysia-and-its-people/careers/recruitment/", internship_url: "https://www.khazanah.com.my/for-malaysia-and-its-people/careers/internships/", graduate_url: "https://www.khazanah.com.my/for-malaysia-and-its-people/careers/graduate-trainee/",
+                description: "Sovereign wealth fund of Malaysia entrusted to grow nation's long-term wealth through strategic investments.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "67", name: "LTAT", slug: "ltat", category: "Government", industry: "Armed Forces Pension Fund",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur", logo_bg: "#1e3a8a", initials: "LTAT",
+                career_url: "https://www.ltat.gov.my/career/", internship_url: null, graduate_url: null,
+                description: "Lembaga Tabung Angkatan Tentera - Statutory body providing superannuation benefits to members of armed forces.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "68", name: "Tabung Haji", slug: "tabung-haji", category: "Government", industry: "Hajj Fund & Financial Services",
+                country: "Malaysia", company_type: "Government", location: "Kuala Lumpur", logo_bg: "#006837", initials: "TH",
+                career_url: "https://www.tabunghaji.gov.my/peluang-kerjaya", internship_url: null, graduate_url: null,
+                description: "Lembaga Tabung Haji managing Islamic pilgrimage funds and broad investment holdings.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "69", name: "Tenaga Nasional Berhad (TNB)", slug: "tnb", category: "Energy", industry: "Utilities & Electricity",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#e30613", initials: "TNB",
+                career_url: "https://jobs.tnb.com.my/", internship_url: "https://jobs.tnb.com.my/go/Internship-Application/2803901/", graduate_url: "https://jobs.tnb.com.my/",
+                description: "Largest electricity utility company in Malaysia powering homes, businesses, and clean energy transitions.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "70", name: "SD Guthrie", slug: "sd-guthrie", category: "Agriculture", industry: "Plantation & Agribusiness",
+                country: "Malaysia", company_type: "GLC", location: "Petaling Jaya, Selangor", logo_bg: "#15803d", initials: "SDG",
+                career_url: "https://www.sdguthrie.com/careers", internship_url: "https://www.sdguthrie.com/careers/students", graduate_url: null,
+                description: "Global sustainable palm oil and agribusiness leader formerly known as Sime Darby Plantation.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "71", name: "Velesto Energy", slug: "velesto-energy", category: "Oil & Gas", industry: "Offshore Drilling",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#0284c7", initials: "VEL",
+                career_url: "https://velesto.com/careers/", internship_url: null, graduate_url: null,
+                description: "Leading offshore drilling contractor operating premium jack-up rigs for oil exploration.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "72", name: "Vantris Energy", slug: "vantris-energy", category: "Oil & Gas", industry: "Energy Solutions",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#0369a1", initials: "VNT",
+                career_url: "https://www.vantrisenergy.com/career/", internship_url: null, graduate_url: null,
+                description: "Dynamic energy technical services provider serving oil and gas asset operations.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "73", name: "Telekom Malaysia (TM)", slug: "telekom-malaysia", category: "Telecommunications", industry: "Telecom & Fiber Broadband",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#f26522", initials: "TM",
+                career_url: "https://tmcareer.tm.com.my/home", internship_url: "https://tmcareer.tm.com.my/internship", graduate_url: "https://tmcareer.tm.com.my/young-talent",
+                description: "National telecommunications leader powering Unifi, enterprise cloud, and 5G connectivity.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "74", name: "CelcomDigi", slug: "celcomdigi", category: "Telecommunications", industry: "Mobile & Telecommunications",
+                country: "Malaysia", company_type: "GLC", location: "Subang Jaya / PJ", logo_bg: "#ffcc00", initials: "CDG",
+                career_url: "https://celcomdigi.jobs.hr.cloud.sap/", internship_url: "https://celcomdigi.jobs.hr.cloud.sap/", graduate_url: "https://celcomdigi.jobs.hr.cloud.sap/",
+                description: "Malaysia's largest mobile network operator formed by merger of Celcom and Digi.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "75", name: "Axiata", slug: "axiata", category: "Telecommunications", industry: "Digital Telco Group",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#ed1c24", initials: "AXI",
+                career_url: "https://www.axiata.com/axiata-career", internship_url: "https://www.axiata.com/axiata-career/young-talent", graduate_url: "https://www.axiata.com/axiata-career/young-talent",
+                description: "Leading Asian telecommunications group spanning digital telcos, infrastructure, and fintech.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "76", name: "CIMB", slug: "cimb", category: "Banking", industry: "Universal Banking Group",
+                country: "Malaysia", company_type: "GLC", location: "Kuala Lumpur", logo_bg: "#7d0000", initials: "CIMB",
+                career_url: "https://www.cimb.com/en/careers/working-at-cimb.html", internship_url: "https://www.cimb.com/en/careers/students-and-graduates.html", graduate_url: "https://www.cimb.com/en/careers/students-and-graduates/the-complete-banker.html",
+                description: "Premier ASEAN universal bank offering consumer, commercial, and investment banking across the region.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "77", name: "Takaful Malaysia", slug: "takaful-malaysia", category: "Insurance", industry: "Islamic Insurance",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#006738", initials: "TAK",
+                career_url: "https://www.takaful-malaysia.com.my/en/careers/", internship_url: null, graduate_url: null,
+                description: "First Islamic insurance operator in Malaysia providing Family and General Takaful protection.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "78", name: "MNRB", slug: "mnrb", category: "Insurance", industry: "Reinsurance & Retakaful",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#003366", initials: "MNR",
+                career_url: "https://www.mnrb.com.my/careers", internship_url: null, graduate_url: null,
+                description: "Investment holding company specializing in national reinsurance and wholesale insurance services.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "79", name: "Malaysia Airports (MAHB)", slug: "mahb", category: "Aviation", industry: "Airport Operations & Aviation",
+                country: "Malaysia", company_type: "GLC", location: "Sepang, Selangor", logo_bg: "#002060", initials: "MAHB",
+                career_url: "https://careers.malaysiaairports.com.my/", internship_url: "https://careers.malaysiaairports.com.my/content/Internship/?locale=en_US", graduate_url: null,
+                description: "Airport manager operating KLIA and 38 airports across Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "80", name: "Malaysia Aviation Group (MAG)", slug: "mag", category: "Aviation", industry: "Airlines & Aviation Services",
+                country: "Malaysia", company_type: "GLC", location: "Sepang, Selangor", logo_bg: "#d2182b", initials: "MAG",
+                career_url: "https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html#career-journey-mag", internship_url: "https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html", graduate_url: "https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html",
+                description: "Global aviation group comprising Malaysia Airlines, Firefly, MASwings, and aviation logistics.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "81", name: "Sime Darby", slug: "sime-darby", category: "Conglomerate", industry: "Automotive & Industrial",
+                country: "Malaysia", company_type: "GLC", location: "Petaling Jaya, Selangor", logo_bg: "#00325b", initials: "SIME",
+                career_url: "https://simedarby.wd3.myworkdayjobs.com/SimeCareerSite", internship_url: "https://www.simedarby.com/careers/students-graduates", graduate_url: "https://www.simedarby.com/careers/students-graduates",
+                description: "Premier partner for luxury motor automotive brands and heavy Caterpillar industrial equipment in Asia Pacific.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "82", name: "Orkim", slug: "orkim", category: "Logistics", industry: "Maritime & Energy Transport",
+                country: "Malaysia", company_type: "Local Company", location: "Kuala Lumpur", logo_bg: "#002b49", initials: "ORK",
+                career_url: "https://www.orkim.com.my/careers/", internship_url: null, graduate_url: null,
+                description: "Leading energy maritime transportation and petroleum product tanker fleet operator in Malaysia.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "83", name: "Pharmaniaga", slug: "pharmaniaga", category: "Healthcare", industry: "Pharmaceutical Manufacturing",
+                country: "Malaysia", company_type: "GLC", location: "Shah Alam, Selangor", logo_bg: "#00833e", initials: "PHAR",
+                career_url: "https://pharmaniaga.com/careers/", internship_url: null, graduate_url: null,
+                description: "Largest integrated pharmaceutical group in Malaysia specializing in healthcare logistics and distribution.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "84", name: "Cenviro", slug: "cenviro", category: "Environmental", industry: "Waste Management & Eco Services",
+                country: "Malaysia", company_type: "GLC", location: "Bukit Pelanduk, Negeri Sembilan", logo_bg: "#2e7d32", initials: "CNV",
+                career_url: "https://www.cenviro.com/careers/", internship_url: null, graduate_url: null,
+                description: "Flagship scheduled waste management company driving eco-innovations and circular economy solutions.",
+                is_verified: true, is_featured: false, updated_at: "2026-08-01"
+            },
+            {
+                id: "85", name: "EY (Ernst & Young)", slug: "ey", category: "Consulting", industry: "Professional Services & Audit",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#ffe600", initials: "EY",
+                career_url: "https://www.ey.com/en_my/careers", internship_url: "https://www.ey.com/en_my/careers/students", graduate_url: "https://www.ey.com/en_my/careers/students",
+                description: "Big Four global leader in assurance, tax, transaction, and business consulting services.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            },
+            {
+                id: "86", name: "Deloitte", slug: "deloitte", category: "Consulting", industry: "Professional Services & Consulting",
+                country: "Malaysia", company_type: "MNC", location: "Kuala Lumpur", logo_bg: "#86bc25", initials: "DT",
+                career_url: "https://jobs.sea.deloitte.com/", internship_url: "https://jobs.sea.deloitte.com/go/Students-and-Graduates/8501201/", graduate_url: "https://jobs.sea.deloitte.com/go/Students-and-Graduates/8501201/",
+                description: "Global professional services network delivering audit, consulting, financial advisory, and risk management.",
+                is_verified: true, is_featured: true, updated_at: "2026-08-01"
+            }
+        ];
+
+        const { useState, useEffect, useMemo, useCallback } = React;
+
+        function App() {
+            // Persistent state
+            const [companies, setCompanies] = useState(() => {
+                const saved = localStorage.getItem('ch_companies_v1');
+                return saved ? JSON.parse(saved) : SEED_COMPANIES;
+            });
+
+            const [bookmarks, setBookmarks] = useState(() => {
+                const saved = localStorage.getItem('ch_bookmarks');
+                return saved ? JSON.parse(saved) : ['1', '11', '51', '57', '69'];
+            });
+
+            const [theme, setTheme] = useState(() => {
+                return localStorage.getItem('ch_theme') || 'light';
+            });
+
+            // Active Tab / View routing
+            const [activeTab, setActiveTab] = useState('home'); // home, companies, internships, graduate, saved, admin
+            const [selectedCompany, setSelectedCompany] = useState(null);
+
+            // Filter & Search states
+            const [searchQuery, setSearchQuery] = useState('');
+            const [selectedCategory, setSelectedCategory] = useState('All');
+            const [selectedCompanyType, setSelectedCompanyType] = useState('All');
+            const [selectedLocation, setSelectedLocation] = useState('All');
+            const [onlyInternships, setOnlyInternships] = useState(false);
+            const [onlyGraduate, setOnlyGraduate] = useState(false);
+            const [onlyVerified, setOnlyVerified] = useState(false);
+            const [sortBy, setSortBy] = useState('featured'); // featured, name, recent
+
+            // Mobile Drawer State
+            const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+            
+            // Toast notifications state
+            const [toast, setToast] = useState(null);
+
+            // Admin edit modal state
+            const [editingCompany, setEditingCompany] = useState(null);
+            const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+
+            useEffect(() => {
+                localStorage.setItem('ch_companies_v1', JSON.stringify(companies));
+            }, [companies]);
+
+            useEffect(() => {
+                localStorage.setItem('ch_bookmarks', JSON.stringify(bookmarks));
+            }, [bookmarks]);
+
+            useEffect(() => {
+                localStorage.setItem('ch_theme', theme);
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            }, [theme]);
+
+            // Sync URL parameters for sharing deep links
+            useEffect(() => {
+                const params = new URLSearchParams(window.location.search);
+                const q = params.get('q');
+                const cat = params.get('category');
+                const tab = params.get('tab');
+                if (q) setSearchQuery(q);
+                if (cat) setSelectedCategory(cat);
+                if (tab) setActiveTab(tab);
+            }, []);
+
+            const showToast = (msg, type = 'info') => {
+                setToast({ msg, type });
+                setTimeout(() => setToast(null), 3000);
+            };
+
+            const toggleBookmark = (id, companyName) => {
+                setBookmarks(prev => {
+                    const exists = prev.includes(id);
+                    if (exists) {
+                        showToast(`Removed ${companyName} from saved list`);
+                        return prev.filter(item => item !== id);
+                    } else {
+                        showToast(`Saved ${companyName} to bookmarks`);
+                        return [...prev, id];
+                    }
+                });
+            };
+
+            const toggleDarkMode = () => {
+                setTheme(prev => prev === 'light' ? 'dark' : 'light');
+            };
+
+            const categories = useMemo(() => {
+                const set = new Set(companies.map(c => c.category));
+                return ['All', ...Array.from(set).sort()];
+            }, [companies]);
+
+            const companyTypes = useMemo(() => {
+                const set = new Set(companies.map(c => c.company_type));
+                return ['All', ...Array.from(set).sort()];
+            }, [companies]);
+
+            const locations = useMemo(() => {
+                const set = new Set(companies.map(c => c.location.split('/')[0].trim()));
+                return ['All', ...Array.from(set).sort()];
+            }, [companies]);
+
+            // Filtered companies logic
+            const filteredCompanies = useMemo(() => {
+                return companies.filter(company => {
+                    const matchesSearch = 
+                        company.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        company.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        company.industry.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        company.description.toLowerCase().includes(searchQuery.toLowerCase());
+
+                    const matchesCategory = selectedCategory === 'All' || company.category === selectedCategory;
+                    const matchesType = selectedCompanyType === 'All' || company.company_type === selectedCompanyType;
+                    const matchesLocation = selectedLocation === 'All' || company.location.includes(selectedLocation);
+                    
+                    const matchesInternship = !onlyInternships || Boolean(company.internship_url);
+                    const matchesGraduate = !onlyGraduate || Boolean(company.graduate_url);
+                    const matchesVerified = !onlyVerified || company.is_verified;
+
+                    return matchesSearch && matchesCategory && matchesType && matchesLocation && matchesInternship && matchesGraduate && matchesVerified;
+                }).sort((a, b) => {
+                    if (sortBy === 'featured') return (b.is_featured ? 1 : 0) - (a.is_featured ? 1 : 0);
+                    if (sortBy === 'name') return a.name.localeCompare(b.name);
+                    if (sortBy === 'recent') return new Date(b.updated_at) - new Date(a.updated_at);
+                    return 0;
+                });
+            }, [companies, searchQuery, selectedCategory, selectedCompanyType, selectedLocation, onlyInternships, onlyGraduate, onlyVerified, sortBy]);
+
+            const featuredCompanies = useMemo(() => {
+                return companies.filter(c => c.is_featured).slice(0, 8);
+            }, [companies]);
+
+            const internshipCompanies = useMemo(() => {
+                return companies.filter(c => Boolean(c.internship_url));
+            }, [companies]);
+
+            const graduateCompanies = useMemo(() => {
+                return companies.filter(c => Boolean(c.graduate_url));
+            }, [companies]);
+
+            const bookmarkedCompanies = useMemo(() => {
+                return companies.filter(c => bookmarks.includes(c.id));
+            }, [companies, bookmarks]);
+
+            // Helper to navigate directly to directory with filter pre-selected
+            const navigateToCategory = (cat) => {
+                setSelectedCategory(cat);
+                setActiveTab('companies');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            return (
+                <div className="flex-col min-h-screen flex">
+                    {/* Top Navigation */}
+                    <header className="sticky top-0 z-40 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 glass-header">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+                            <div className="flex items-center gap-3 cursor-pointer" onClick={() => { setActiveTab('home'); window.scrollTo(0, 0); }}>
+                                <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-indigo-600 flex items-center justify-center text-white shadow-md font-extrabold text-xl">
+                                    C
+                                </div>
+                                <div>
+                                    <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
+                                        CareerHub <span className="text-xs px-2 py-0.5 rounded-full bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 font-semibold">MY</span>
+                                    </span>
+                                    <p className="text-[10px] text-slate-500 dark:text-slate-400 -mt-1 hidden sm:block">Corporate Portal Directory</p>
+                                </div>
+                            </div>
+
+                            {/* Desktop Nav Links */}
+                            <nav className="hidden md:flex items-center gap-1">
+                                <button onClick={() => setActiveTab('home')} className={`px-3 py-2 rounded-lg text-sm font-medium transition ${activeTab === 'home' ? 'bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}>
+                                    Home
+                                </button>
+                                <button onClick={() => setActiveTab('companies')} className={`px-3 py-2 rounded-lg text-sm font-medium transition ${activeTab === 'companies' ? 'bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}>
+                                    All Companies ({companies.length})
+                                </button>
+                                <button onClick={() => { setOnlyInternships(true); setActiveTab('internships'); }} className={`px-3 py-2 rounded-lg text-sm font-medium transition ${activeTab === 'internships' ? 'bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}>
+                                    Internships
+                                </button>
+                                <button onClick={() => { setOnlyGraduate(true); setActiveTab('graduate'); }} className={`px-3 py-2 rounded-lg text-sm font-medium transition ${activeTab === 'graduate' ? 'bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}>
+                                    Graduate Programs
+                                </button>
+                                <button onClick={() => setActiveTab('saved')} className={`px-3 py-2 rounded-lg text-sm font-medium transition flex items-center gap-1.5 ${activeTab === 'saved' ? 'bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}>
+                                    <span>Saved</span>
+                                    {bookmarks.length > 0 && (
+                                        <span className="px-1.5 py-0.2 text-xs rounded-full bg-brand-600 text-white font-semibold">{bookmarks.length}</span>
+                                    )}
+                                </button>
+                            </nav>
+
+                            {/* Utility actions */}
+                            <div className="flex items-center gap-2">
+                                <button 
+                                    onClick={toggleDarkMode}
+                                    className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
+                                    title="Toggle theme"
+                                >
+                                    {theme === 'dark' ? '☀️' : '🌙'}
+                                </button>
+                                <button 
+                                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                                    className="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200"
+                                >
+                                    <i data-lucide="menu" className="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Mobile Dropdown Menu */}
+                        {isMobileMenuOpen && (
+                            <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-3 space-y-1">
+                                <button onClick={() => { setActiveTab('home'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Home</button>
+                                <button onClick={() => { setActiveTab('companies'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">All Companies ({companies.length})</button>
+                                <button onClick={() => { setOnlyInternships(true); setActiveTab('internships'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Internship Portals ({internshipCompanies.length})</button>
+                                <button onClick={() => { setOnlyGraduate(true); setActiveTab('graduate'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Graduate Programmes ({graduateCompanies.length})</button>
+                                <button onClick={() => { setActiveTab('saved'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Saved Companies ({bookmarks.length})</button>
+                                <button onClick={() => { setActiveTab('admin'); setIsMobileMenuOpen(false); }} className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Admin Dashboard</button>
+                            </div>
+                        )}
+                    </header>
+
+                    {/* Toast Notification Container */}
+                    {toast && (
+                        <div className="fixed bottom-5 right-5 z-50 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 text-sm font-medium border border-slate-700 animate-bounce">
+                            <span>✨</span>
+                            <span>{toast.msg}</span>
+                        </div>
+                    )}
+
+                    {/* Main Dynamic View Content */}
+                    <main className="flex-1">
+                        {activeTab === 'home' && (
+                            <HomeView 
+                                companies={companies}
+                                featuredCompanies={featuredCompanies}
+                                categories={categories}
+                                onSearch={(query) => {
+                                    setSearchQuery(query);
+                                    setActiveTab('companies');
+                                }}
+                                onCategorySelect={navigateToCategory}
+                                onSelectCompany={setSelectedCompany}
+                                bookmarks={bookmarks}
+                                onToggleBookmark={toggleBookmark}
+                                onExploreInternships={() => {
+                                    setOnlyInternships(true);
+                                    setActiveTab('internships');
+                                }}
+                            />
+                        )}
+
+                        {activeTab === 'companies' && (
+                            <DirectoryView 
+                                companies={filteredCompanies}
+                                totalCount={companies.length}
+                                searchQuery={searchQuery}
+                                setSearchQuery={setSearchQuery}
+                                selectedCategory={selectedCategory}
+                                setSelectedCategory={setSelectedCategory}
+                                selectedCompanyType={selectedCompanyType}
+                                setSelectedCompanyType={setSelectedCompanyType}
+                                selectedLocation={selectedLocation}
+                                setSelectedLocation={setSelectedLocation}
+                                onlyInternships={onlyInternships}
+                                setOnlyInternships={setOnlyInternships}
+                                onlyGraduate={onlyGraduate}
+                                setOnlyGraduate={setOnlyGraduate}
+                                onlyVerified={onlyVerified}
+                                setOnlyVerified={setOnlyVerified}
+                                sortBy={sortBy}
+                                setSortBy={setSortBy}
+                                categories={categories}
+                                companyTypes={companyTypes}
+                                locations={locations}
+                                bookmarks={bookmarks}
+                                onToggleBookmark={toggleBookmark}
+                                onSelectCompany={setSelectedCompany}
+                                resetFilters={() => {
+                                    setSearchQuery('');
+                                    setSelectedCategory('All');
+                                    setSelectedCompanyType('All');
+                                    setSelectedLocation('All');
+                                    setOnlyInternships(false);
+                                    setOnlyGraduate(false);
+                                    setOnlyVerified(false);
+                                }}
+                            />
+                        )}
+
+                        {activeTab === 'internships' && (
+                            <InternshipView 
+                                companies={internshipCompanies}
+                                bookmarks={bookmarks}
+                                onToggleBookmark={toggleBookmark}
+                                onSelectCompany={setSelectedCompany}
+                            />
+                        )}
+
+                        {activeTab === 'graduate' && (
+                            <GraduateView 
+                                companies={graduateCompanies}
+                                bookmarks={bookmarks}
+                                onToggleBookmark={toggleBookmark}
+                                onSelectCompany={setSelectedCompany}
+                            />
+                        )}
+
+                        {activeTab === 'saved' && (
+                            <SavedView 
+                                companies={bookmarkedCompanies}
+                                bookmarks={bookmarks}
+                                onToggleBookmark={toggleBookmark}
+                                onSelectCompany={setSelectedCompany}
+                                onExplore={() => setActiveTab('companies')}
+                            />
+                        )}
+
+                        {activeTab === 'admin' && (
+                            <AdminView 
+                                companies={companies}
+                                setCompanies={setCompanies}
+                                showToast={showToast}
+                            />
+                        )}
+                    </main>
+
+                    {/* Detailed Company Modal */}
+                    {selectedCompany && (
+                        <CompanyDetailModal 
+                            company={selectedCompany} 
+                            onClose={() => setSelectedCompany(null)}
+                            isBookmarked={bookmarks.includes(selectedCompany.id)}
+                            onToggleBookmark={() => toggleBookmark(selectedCompany.id, selectedCompany.name)}
+                        />
+                    )}
+
+                    {}
+                    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800 mt-20">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                                <div className="space-y-3">
+                                    <div className="flex items-center gap-2 text-white font-bold text-lg">
+                                        <div className="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">C</div>
+                                        CareerHub Malaysia
+                                    </div>
+                                    <p className="text-xs text-slate-400 leading-relaxed">
+                                        Centralized career and internship directory for Malaysian students, fresh graduates, and professional job seekers.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-sm font-semibold text-white mb-3">Directory</h4>
+                                    <ul className="space-y-2 text-xs text-slate-400">
+                                        <li><button onClick={() => setActiveTab('companies')} className="hover:text-white transition">All Corporate Portals</button></li>
+                                        <li><button onClick={() => { setOnlyInternships(true); setActiveTab('internships'); }} className="hover:text-white transition">Internship Opportunities</button></li>
+                                        <li><button onClick={() => { setOnlyGraduate(true); setActiveTab('graduate'); }} className="hover:text-white transition">Management Trainee Programs</button></li>
+                                        <li><button onClick={() => navigateToCategory('Technology')} className="hover:text-white transition">Tech & IT Companies</button></li>
+                                        <li><button onClick={() => navigateToCategory('Banking')} className="hover:text-white transition">Banking & Financial Institutions</button></li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-sm font-semibold text-white mb-3">Top Sectors</h4>
+                                    <ul className="space-y-2 text-xs text-slate-400">
+                                        <li><button onClick={() => navigateToCategory('Oil & Gas')} className="hover:text-white transition">Oil & Gas / Energy</button></li>
+                                        <li><button onClick={() => navigateToCategory('FMCG')} className="hover:text-white transition">FMCG & Consumer Goods</button></li>
+                                        <li><button onClick={() => navigateToCategory('Consulting')} className="hover:text-white transition">Professional Services & Consulting</button></li>
+                                        <li><button onClick={() => navigateToCategory('Automotive')} className="hover:text-white transition">Automotive & Mobility</button></li>
+                                        <li><button onClick={() => navigateToCategory('Semiconductor')} className="hover:text-white transition">Semiconductor & Hardware</button></li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-sm font-semibold text-white mb-3">Trust & Security</h4>
+                                    <p className="text-xs text-slate-400 leading-relaxed">
+                                        All external career links lead directly to official company domains (`https://`). We never collect candidate resumes directly.
+                                    </p>
+                                    <div className="mt-3 flex items-center gap-2 text-xs text-brand-400 font-medium">
+                                        <span>✓ 100% Official Links Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pt-8 border-t border-slate-800 text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+                                <div>
+                                    © 2026 CareerHub Malaysia. Utility directory platform.
+                                </div>
+                                <div className="text-center md:text-right max-w-lg leading-normal">
+                                    <span className="font-semibold text-slate-400">Disclaimer:</span> CareerHub is an independent career directory. We are not affiliated with or endorsed by the corporate entities listed. Application procedures take place directly on official company systems.
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        }
+
+        function HomeView({ companies, featuredCompanies, categories, onSearch, onCategorySelect, onSelectCompany, bookmarks, onToggleBookmark, onExploreInternships }) {
+            const [query, setQuery] = useState('');
+
+            const handleSearchSubmit = (e) => {
+                e.preventDefault();
+                onSearch(query);
+            };
+
+            return (
+                <div className="space-y-16 pb-12">
+                    {/* Hero Banner Section */}
+                    <section className="relative bg-gradient-to-b from-brand-50/50 via-slate-50 to-white dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 py-16 md:py-24 border-b border-slate-200/60 dark:border-slate-800">
+                        <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-8">
+                            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 text-xs font-semibold border border-brand-200 dark:border-brand-800">
+                                🚀 Curated Career Directory for Malaysia
+                            </div>
+
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                                Find Official Career & Internship Portals <span className="text-brand-600 dark:text-brand-400">in One Place</span>
+                            </h1>
+
+                            <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                                Stop searching Google one-by-one. Access verified, direct career pages for 86+ major multinational corporations and Malaysian enterprises.
+                            </p>
+
+                            {/* Hero Search Box */}
+                            <form onSubmit={handleSearchSubmit} className="max-w-2xl mx-auto flex flex-col sm:flex-row gap-2 bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-800">
+                                <div className="flex-1 flex items-center px-3 gap-2">
+                                    <span className="text-slate-400">🔍</span>
+                                    <input 
+                                        type="text"
+                                        placeholder="Search by company name, category, or role (e.g. PETRONAS, Software)..."
+                                        value={query}
+                                        onChange={(e) => setQuery(e.target.value)}
+                                        className="w-full bg-transparent py-2.5 text-sm outline-none text-slate-900 dark:text-white placeholder-slate-400"
+                                    />
+                                </div>
+                                <button 
+                                    type="submit"
+                                    className="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-xl transition shadow-md flex items-center justify-center gap-2"
+                                >
+                                    <span>Search Portals</span>
+                                </button>
+                            </form>
+
+                            {/* Popular search terms pills */}
+                            <div className="flex items-center justify-center flex-wrap gap-2 text-xs text-slate-500 dark:text-slate-400 pt-2">
+                                <span className="font-medium">Popular:</span>
+                                {['PETRONAS', 'Microsoft', 'Maybank', 'Intel', 'Shell Malaysia', 'Deloitte', 'Setel'].map(term => (
+                                    <button 
+                                        key={term}
+                                        onClick={() => onSearch(term)}
+                                        className="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 transition"
+                                    >
+                                        {term}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Quick Statistics Bar */}
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+                            <div className="text-center p-2">
+                                <div className="text-2xl md:text-3xl font-extrabold text-brand-600 dark:text-brand-400">86+</div>
+                                <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Verified Companies</div>
+                            </div>
+                            <div className="text-center p-2 border-l border-slate-100 dark:border-slate-800">
+                                <div className="text-2xl md:text-3xl font-extrabold text-brand-600 dark:text-brand-400">20+</div>
+                                <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Key Industries</div>
+                            </div>
+                            <div className="text-center p-2 border-l border-slate-100 dark:border-slate-800">
+                                <div className="text-2xl md:text-3xl font-extrabold text-brand-600 dark:text-brand-400">100%</div>
+                                <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Official Links</div>
+                            </div>
+                            <div className="text-center p-2 border-l border-slate-100 dark:border-slate-800">
+                                <div className="text-2xl md:text-3xl font-extrabold text-brand-600 dark:text-brand-400">Free</div>
+                                <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">For All Job Seekers</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Popular Industries Section */}
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">Explore by Industry</h2>
+                                <p className="text-xs text-slate-500 dark:text-slate-400">Filter companies directly based on your academic background or career interest.</p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                            {[
+                                { name: 'Technology', icon: '💻', count: companies.filter(c => c.category === 'Technology').length },
+                                { name: 'Banking', icon: '🏦', count: companies.filter(c => c.category === 'Banking').length },
+                                { name: 'Oil & Gas', icon: '⚡', count: companies.filter(c => c.category === 'Oil & Gas').length },
+                                { name: 'FMCG', icon: '🛒', count: companies.filter(c => c.category === 'FMCG').length },
+                                { name: 'Engineering', icon: '⚙️', count: companies.filter(c => c.category === 'Engineering').length },
+                                { name: 'Healthcare', icon: '🏥', count: companies.filter(c => c.category === 'Healthcare').length },
+                                { name: 'Consulting', icon: '📊', count: companies.filter(c => c.category === 'Consulting').length },
+                                { name: 'Automotive', icon: '🚗', count: companies.filter(c => c.category === 'Automotive').length },
+                            ].map(item => (
+                                <div 
+                                    key={item.name}
+                                    onClick={() => onCategorySelect(item.name)}
+                                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 rounded-xl hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md cursor-pointer transition flex items-center justify-between group"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-2xl">{item.icon}</span>
+                                        <div>
+                                            <div className="font-semibold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition">{item.name}</div>
+                                            <div className="text-[11px] text-slate-500 dark:text-slate-400">{item.count} companies</div>
+                                        </div>
+                                    </div>
+                                    <span className="text-slate-300 dark:text-slate-700 group-hover:text-brand-500 transition">→</span>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Featured Companies Grid */}
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">Featured Corporate Portals</h2>
+                                <p className="text-xs text-slate-500 dark:text-slate-400">Top employers hiring students, graduates, and professionals in Malaysia.</p>
+                            </div>
+                            <button 
+                                onClick={() => onCategorySelect('All')}
+                                className="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1"
+                            >
+                                View All ({companies.length}) →
+                            </button>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            {featuredCompanies.map(company => (
+                                <CompanyCard 
+                                    key={company.id}
+                                    company={company}
+                                    isBookmarked={bookmarks.includes(company.id)}
+                                    onToggleBookmark={() => onToggleBookmark(company.id, company.name)}
+                                    onSelect={() => onSelectCompany(company)}
+                                />
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Dedicated Internship Banner Callout */}
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="bg-gradient-to-r from-brand-900 via-indigo-900 to-slate-900 text-white rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+                            <div className="space-y-4 max-w-xl">
+                                <span className="inline-block px-3 py-1 rounded-md bg-white/10 text-brand-200 text-xs font-semibold tracking-wider">
+                                    STUDENTS & INTERNSHIPS
+                                </span>
+                                <h3 className="text-2xl md:text-3xl font-extrabold leading-tight">
+                                    Looking for Industrial Training or Internship Placement?
+                                </h3>
+                                <p className="text-sm text-slate-300 leading-relaxed">
+                                    We have filtered out companies with official internship application channels for IT, Engineering, Business, Finance, and Science students.
+                                </p>
+                                <button 
+                                    onClick={onExploreInternships}
+                                    className="px-6 py-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-sm rounded-xl transition shadow-lg inline-flex items-center gap-2"
+                                >
+                                    <span>Explore Internship Directory</span>
+                                    <span>→</span>
+                                </button>
+                            </div>
+
+                            <div className="w-full md:w-auto flex flex-col gap-3 min-w-[240px]">
+                                <div className="bg-white/10 border border-white/20 p-4 rounded-xl text-center">
+                                    <div className="text-3xl font-bold text-white">{companies.filter(c => c.internship_url).length}+</div>
+                                    <div className="text-xs text-slate-300">Verified Internship Links</div>
+                                </div>
+                                <div className="bg-white/10 border border-white/20 p-4 rounded-xl text-center">
+                                    <div className="text-3xl font-bold text-white">{companies.filter(c => c.graduate_url).length}+</div>
+                                    <div className="text-xs text-slate-300">Graduate & MT Programs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* How It Works Section */}
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                        <div className="text-center space-y-2">
+                            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">How CareerHub Works</h2>
+                            <p className="text-xs text-slate-500 dark:text-slate-400">Three simple steps to secure your application.</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl space-y-3">
+                                <div className="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-300 flex items-center justify-center font-bold text-lg">1</div>
+                                <h3 className="font-semibold text-base text-slate-900 dark:text-white">Discover & Search</h3>
+                                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                    Filter companies by industry (Tech, Banking, Energy, FMCG), company type (MNC vs GLC), or location.
+                                </p>
+                            </div>
+
+                            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl space-y-3">
+                                <div className="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-300 flex items-center justify-center font-bold text-lg">2</div>
+                                <h3 className="font-semibold text-base text-slate-900 dark:text-white">Inspect Verified Info</h3>
+                                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                    Check available channels for general careers, student internships, or graduate trainee programs.
+                                </p>
+                            </div>
+
+                            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl space-y-3">
+                                <div className="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-300 flex items-center justify-center font-bold text-lg">3</div>
+                                <h3 className="font-semibold text-base text-slate-900 dark:text-white">Apply Directly</h3>
+                                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                    Click through directly to the company's official Workday or career portal with zero middleman friction.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            );
+        }
+
+        function DirectoryView({ 
+            companies, totalCount, searchQuery, setSearchQuery, selectedCategory, setSelectedCategory,
+            selectedCompanyType, setSelectedCompanyType, selectedLocation, setSelectedLocation,
+            onlyInternships, setOnlyInternships, onlyGraduate, setOnlyGraduate, onlyVerified, setOnlyVerified,
+            sortBy, setSortBy, categories, companyTypes, locations, bookmarks, onToggleBookmark, onSelectCompany, resetFilters 
+        }) {
+            const [showMobileFilters, setShowMobileFilters] = useState(false);
+
+            return (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+                    {/* Header bar */}
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
+                        <div>
+                            <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white">Corporate Portal Directory</h1>
+                            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                                Showing {companies.length} of {totalCount} verified corporate career portals
+                            </p>
+                        </div>
+
+                        {/* Search & Mobile Filter Toggle */}
+                        <div className="flex items-center gap-2">
+                            <div className="relative flex-1 md:w-80">
+                                <input 
+                                    type="text"
+                                    placeholder="Filter by name or tech..."
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    className="w-full pl-9 pr-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm outline-none focus:border-brand-500"
+                                />
+                                <span className="absolute left-3 top-2.5 text-slate-400 text-xs">🔍</span>
+                            </div>
+
+                            <button 
+                                onClick={() => setShowMobileFilters(!showMobileFilters)}
+                                className="lg:hidden px-3 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-semibold rounded-xl"
+                            >
+                                Filters {onlyInternships || onlyGraduate || onlyVerified || selectedCategory !== 'All' ? '•' : ''}
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Layout Grid: Sidebar + Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                        {/* Sidebar Filters Desktop */}
+                        <aside className={`lg:block ${showMobileFilters ? 'block' : 'hidden'} space-y-6 bg-white dark:bg-slate-900 lg:bg-transparent lg:dark:bg-transparent p-4 lg:p-0 rounded-2xl border lg:border-none border-slate-200 dark:border-slate-800`}>
+                            <div className="flex items-center justify-between">
+                                <h3 className="font-bold text-sm text-slate-900 dark:text-white uppercase tracking-wider">Filters</h3>
+                                <button onClick={resetFilters} className="text-xs text-brand-600 dark:text-brand-400 hover:underline font-medium">Reset All</button>
+                            </div>
+
+                            {/* Sort Option */}
+                            <div className="space-y-2">
+                                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400">Sort By</label>
+                                <select 
+                                    value={sortBy} 
+                                    onChange={(e) => setSortBy(e.target.value)}
+                                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs rounded-xl p-2.5 outline-none font-medium text-slate-900 dark:text-slate-100"
+                                >
+                                    <option value="featured">Featured First</option>
+                                    <option value="name">Alphabetical (A-Z)</option>
+                                    <option value="recent">Recently Verified</option>
+                                </select>
+                            </div>
+
+                            {/* Program Requirements Checkboxes */}
+                            <div className="space-y-2.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400">Opportunities Available</label>
+                                
+                                <label className="flex items-center gap-2 cursor-pointer text-xs text-slate-700 dark:text-slate-300">
+                                    <input 
+                                        type="checkbox" 
+                                        checked={onlyInternships} 
+                                        onChange={(e) => setOnlyInternships(e.target.checked)}
+                                        className="rounded text-brand-600 focus:ring-brand-500"
+                                    />
+                                    <span>Internship Portal Available</span>
+                                </label>
+
+                                <label className="flex items-center gap-2 cursor-pointer text-xs text-slate-700 dark:text-slate-300">
+                                    <input 
+                                        type="checkbox" 
+                                        checked={onlyGraduate} 
+                                        onChange={(e) => setOnlyGraduate(e.target.checked)}
+                                        className="rounded text-brand-600 focus:ring-brand-500"
+                                    />
+                                    <span>Graduate / MT Program Available</span>
+                                </label>
+
+                                <label className="flex items-center gap-2 cursor-pointer text-xs text-slate-700 dark:text-slate-300">
+                                    <input 
+                                        type="checkbox" 
+                                        checked={onlyVerified} 
+                                        onChange={(e) => setOnlyVerified(e.target.checked)}
+                                        className="rounded text-brand-600 focus:ring-brand-500"
+                                    />
+                                    <span>Official Verified Portals Only</span>
+                                </label>
+                            </div>
+
+                            {/* Category Filter */}
+                            <div className="space-y-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400">Industry Sector</label>
+                                <div className="space-y-1 max-h-48 overflow-y-auto custom-scrollbar pr-1">
+                                    {categories.map(cat => (
+                                        <button
+                                            key={cat}
+                                            onClick={() => setSelectedCategory(cat)}
+                                            className={`w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-medium transition flex items-center justify-between ${selectedCategory === cat ? 'bg-brand-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
+                                        >
+                                            <span>{cat}</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Company Type */}
+                            <div className="space-y-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400">Entity Type</label>
+                                <select 
+                                    value={selectedCompanyType} 
+                                    onChange={(e) => setSelectedCompanyType(e.target.value)}
+                                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs rounded-xl p-2.5 outline-none font-medium"
+                                >
+                                    {companyTypes.map(type => (
+                                        <option key={type} value={type}>{type}</option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            {/* Location */}
+                            <div className="space-y-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400">Malaysia Hub Location</label>
+                                <select 
+                                    value={selectedLocation} 
+                                    onChange={(e) => setSelectedLocation(e.target.value)}
+                                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs rounded-xl p-2.5 outline-none font-medium"
+                                >
+                                    {locations.map(loc => (
+                                        <option key={loc} value={loc}>{loc}</option>
+                                    ))}
+                                </select>
+                            </div>
+                        </aside>
+
+                        {/* Company Card Grid */}
+                        <div className="lg:col-span-3 space-y-6">
+                            {companies.length === 0 ? (
+                                <EmptyState onReset={resetFilters} />
+                            ) : (
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    {companies.map(company => (
+                                        <CompanyCard 
+                                            key={company.id}
+                                            company={company}
+                                            isBookmarked={bookmarks.includes(company.id)}
+                                            onToggleBookmark={() => onToggleBookmark(company.id, company.name)}
+                                            onSelect={() => onSelectCompany(company)}
+                                        />
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function InternshipView({ companies, bookmarks, onToggleBookmark, onSelectCompany }) {
+            return (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+                    <div className="bg-brand-900 text-white p-8 rounded-3xl space-y-3">
+                        <span className="text-xs px-2.5 py-1 rounded-md bg-brand-800 text-brand-200 font-bold uppercase tracking-wider">
+                            Verified Internship Directory
+                        </span>
+                        <h1 className="text-2xl md:text-3xl font-extrabold">Companies with Active Internship Applications</h1>
+                        <p className="text-xs md:text-sm text-brand-100 max-w-2xl">
+                            Direct links to official undergraduate industrial training and internship programs across Malaysia.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {companies.map(company => (
+                            <CompanyCard 
+                                key={company.id}
+                                company={company}
+                                isBookmarked={bookmarks.includes(company.id)}
+                                onToggleBookmark={() => onToggleBookmark(company.id, company.name)}
+                                onSelect={() => onSelectCompany(company)}
+                                highlightInternship={true}
+                            />
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function GraduateView({ companies, bookmarks, onToggleBookmark, onSelectCompany }) {
+            return (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+                    <div className="bg-indigo-900 text-white p-8 rounded-3xl space-y-3">
+                        <span className="text-xs px-2.5 py-1 rounded-md bg-indigo-800 text-indigo-200 font-bold uppercase tracking-wider">
+                            Management Trainee & Graduate Jobs
+                        </span>
+                        <h1 className="text-2xl md:text-3xl font-extrabold">Fresh Graduate Trainee Programs</h1>
+                        <p className="text-xs md:text-sm text-indigo-100 max-w-2xl">
+                            Structured management associate programs, early career tracks, and fresh graduate opportunities.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {companies.map(company => (
+                            <CompanyCard 
+                                key={company.id}
+                                company={company}
+                                isBookmarked={bookmarks.includes(company.id)}
+                                onToggleBookmark={() => onToggleBookmark(company.id, company.name)}
+                                onSelect={() => onSelectCompany(company)}
+                                highlightGraduate={true}
+                            />
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function SavedView({ companies, bookmarks, onToggleBookmark, onSelectCompany, onExplore }) {
+            return (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+                    <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
+                        <h1 className="text-2xl font-bold text-slate-900 dark:text-white">My Saved Companies ({companies.length})</h1>
+                        <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Keep track of career portals you plan to apply to during application season.</p>
+                    </div>
+
+                    {companies.length === 0 ? (
+                        <div className="text-center py-16 space-y-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8">
+                            <div className="text-4xl">🔖</div>
+                            <h3 className="font-semibold text-lg text-slate-900 dark:text-white">No saved companies yet</h3>
+                            <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                                Bookmark companies while browsing to quickly access their application portals later.
+                            </p>
+                            <button onClick={onExplore} className="px-5 py-2.5 bg-brand-600 text-white rounded-xl text-xs font-semibold hover:bg-brand-700 transition">
+                                Explore Companies
+                            </button>
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {companies.map(company => (
+                                <CompanyCard 
+                                    key={company.id}
+                                    company={company}
+                                    isBookmarked={true}
+                                    onToggleBookmark={() => onToggleBookmark(company.id, company.name)}
+                                    onSelect={() => onSelectCompany(company)}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        function CompanyCard({ company, isBookmarked, onToggleBookmark, onSelect, highlightInternship, highlightGraduate }) {
+            return (
+                <div className="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-5 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between group relative">
+                    <div className="space-y-3">
+                        {/* Header: Logo, Name, Bookmark */}
+                        <div className="flex items-start justify-between gap-3">
+                            <div className="flex items-center gap-3">
+                                <div 
+                                    className="w-11 h-11 rounded-xl flex items-center justify-center font-bold text-white text-sm shadow-sm flex-shrink-0"
+                                    style={{ backgroundColor: company.logo_bg || '#1e3a8a' }}
+                                >
+                                    {company.initials || company.name.substring(0, 2).toUpperCase()}
+                                </div>
+
+                                <div className="overflow-hidden">
+                                    <h3 
+                                        onClick={onSelect}
+                                        className="font-bold text-base text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition cursor-pointer truncate"
+                                        title={company.name}
+                                    >
+                                        {company.name}
+                                    </h3>
+                                    <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400 truncate">{company.category} • {company.location}</p>
+                                </div>
+                            </div>
+
+                            <button 
+                                onClick={onToggleBookmark}
+                                className={`p-1.5 rounded-lg transition ${isBookmarked ? 'text-red-500 bg-red-50 dark:bg-red-950/40' : 'text-slate-300 hover:text-slate-500 dark:text-slate-700'}`}
+                                title={isBookmarked ? "Remove Bookmark" : "Save Company"}
+                            >
+                                <span className="text-base">{isBookmarked ? '♥️' : '♡'}</span>
+                            </button>
+                        </div>
+
+                        {/* Description snippet */}
+                        <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+                            {company.description}
+                        </p>
+
+                        {/* Badges */}
+                        <div className="flex flex-wrap gap-1.5 pt-1">
+                            {company.is_verified && (
+                                <span className="text-[10px] px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold border border-emerald-200 dark:border-emerald-800">
+                                    ✓ Verified Portal
+                                </span>
+                            )}
+                            <span className="text-[10px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">
+                                {company.company_type}
+                            </span>
+                            {company.internship_url && (
+                                <span className={`text-[10px] px-2 py-0.5 rounded-md font-semibold ${highlightInternship ? 'bg-brand-600 text-white' : 'bg-brand-50 dark:bg-brand-950/50 text-brand-700 dark:text-brand-300'}`}>
+                                    🎓 Internship
+                                </span>
+                            )}
+                            {company.graduate_url && (
+                                <span className={`text-[10px] px-2 py-0.5 rounded-md font-semibold ${highlightGraduate ? 'bg-indigo-600 text-white' : 'bg-purple-50 dark:bg-purple-950/50 text-purple-700 dark:text-purple-300'}`}>
+                                    💼 Graduate
+                                </span>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Actions footer */}
+                    <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                        <button 
+                            onClick={onSelect}
+                            className="text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition"
+                        >
+                            View Details
+                        </button>
+
+                        <a 
+                            href={highlightInternship ? (company.internship_url || company.career_url) : company.career_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <span>Career Portal</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            );
+        }
+
+        function CompanyDetailModal({ company, onClose, isBookmarked, onToggleBookmark }) {
+            return (
+                <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+                    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-150">
+                        {/* Header Banner */}
+                        <div className="p-6 bg-gradient-to-r from-slate-900 via-brand-950 to-slate-900 text-white flex items-start justify-between">
+                            <div className="flex items-center gap-4">
+                                <div 
+                                    className="w-14 h-14 rounded-2xl flex items-center justify-center font-extrabold text-xl text-white shadow-md border border-white/20"
+                                    style={{ backgroundColor: company.logo_bg || '#1e3a8a' }}
+                                >
+                                    {company.initials || company.name.substring(0, 2).toUpperCase()}
+                                </div>
+
+                                <div>
+                                    <div className="flex items-center gap-2">
+                                        <h2 className="text-xl font-bold">{company.name}</h2>
+                                        {company.is_verified && (
+                                            <span className="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">
+                                                Verified Portal
+                                            </span>
+                                        )}
+                                    </div>
+                                    <p className="text-xs text-slate-300">{company.industry} • {company.location}, {company.country}</p>
+                                </div>
+                            </div>
+
+                            <button onClick={onClose} className="p-1 text-slate-400 hover:text-white text-xl">✕</button>
+                        </div>
+
+                        {/* Modal Body */}
+                        <div className="p-6 space-y-6 max-h-[75vh] overflow-y-auto custom-scrollbar">
+                            <div>
+                                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">About Company</h4>
+                                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">{company.description}</p>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-4 bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl text-xs">
+                                <div>
+                                    <span className="text-slate-400">Category:</span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200 ml-1">{company.category}</span>
+                                </div>
+                                <div>
+                                    <span className="text-slate-400">Entity Type:</span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200 ml-1">{company.company_type}</span>
+                                </div>
+                                <div>
+                                    <span className="text-slate-400">Hub Location:</span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200 ml-1">{company.location}</span>
+                                </div>
+                                <div>
+                                    <span className="text-slate-400">Last Audit:</span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200 ml-1">{company.updated_at}</span>
+                                </div>
+                            </div>
+
+                            {/* Direct External Application Channels */}
+                            <div className="space-y-3">
+                                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Official Portals</h4>
+
+                                {/* Official Main Career Portal */}
+                                <a 
+                                    href={company.career_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-between p-4 bg-brand-50 dark:bg-brand-950/40 border border-brand-200 dark:border-brand-800 rounded-2xl hover:bg-brand-100 transition group"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl">💼</span>
+                                        <div>
+                                            <div className="font-bold text-sm text-brand-900 dark:text-brand-200">Main Corporate Career Portal</div>
+                                            <div className="text-[11px] text-brand-700 dark:text-brand-400">Full-time roles, experienced hire & professional opportunities</div>
+                                        </div>
+                                    </div>
+                                    <span className="text-brand-600 font-bold group-hover:translate-x-0.5 transition">Visit Site ↗</span>
+                                </a>
+
+                                {/* Internship Portal */}
+                                {company.internship_url ? (
+                                    <a 
+                                        href={company.internship_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-between p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-2xl hover:bg-emerald-100 transition group"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <span className="text-xl">🎓</span>
+                                            <div>
+                                                <div className="font-bold text-sm text-emerald-900 dark:text-emerald-200">Internship & Industrial Training Portal</div>
+                                                <div className="text-[11px] text-emerald-700 dark:text-emerald-400">Undergraduate internships, practical placement channels</div>
+                                            </div>
+                                        </div>
+                                        <span className="text-emerald-700 font-bold group-hover:translate-x-0.5 transition">Apply Portal ↗</span>
+                                    </a>
+                                ) : (
+                                    <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl text-xs text-slate-500">
+                                        🎓 Internship Portal: Check main career portal for placement openings.
+                                    </div>
+                                )}
+
+                                {/* Graduate Program */}
+                                {company.graduate_url && (
+                                    <a 
+                                        href={company.graduate_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-between p-4 bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 rounded-2xl hover:bg-purple-100 transition group"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <span className="text-xl">🚀</span>
+                                            <div>
+                                                <div className="font-bold text-sm text-purple-900 dark:text-purple-200">Fresh Graduate / Management Trainee</div>
+                                                <div className="text-[11px] text-purple-700 dark:text-purple-400">Management associate programs & structured entry tracks</div>
+                                            </div>
+                                        </div>
+                                        <span className="text-purple-700 font-bold group-hover:translate-x-0.5 transition">Explore Program ↗</span>
+                                    </a>
+                                )}
+                            </div>
+
+                            <p className="text-[11px] text-slate-400 italic">
+                                Note: You are leaving CareerHub. All application procedures and data handling are strictly managed on the respective employer's secure systems.
+                            </p>
+                        </div>
+
+                        {/* Footer */}
+                        <div className="p-4 bg-slate-50 dark:bg-slate-800/80 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                            <button 
+                                onClick={onToggleBookmark}
+                                className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${isBookmarked ? 'bg-red-500 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200'}`}
+                            >
+                                <span>{isBookmarked ? '♥ Saved in Bookmarks' : '♡ Save to Bookmarks'}</span>
+                            </button>
+
+                            <button onClick={onClose} className="px-5 py-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-xl text-xs font-semibold">
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function AdminView({ companies, setCompanies, showToast }) {
+            const [searchTerm, setSearchTerm] = useState('');
+            const [editingCompany, setEditingCompany] = useState(null);
+            const [isAdding, setIsAdding] = useState(false);
+
+            const filtered = companies.filter(c => 
+                c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                c.category.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+
+            const handleDelete = (id, name) => {
+                if (window.confirm(`Are you sure you want to remove ${name} from the portal?`)) {
+                    setCompanies(prev => prev.filter(c => c.id !== id));
+                    showToast(`Deleted ${name}`);
+                }
+            };
+
+            const toggleVerified = (id) => {
+                setCompanies(prev => prev.map(c => {
+                    if (c.id === id) {
+                        const updated = !c.is_verified;
+                        showToast(`${c.name} verified status: ${updated}`);
+                        return { ...c, is_verified: updated };
+                    }
+                    return c;
+                }));
+            };
+
+            const toggleFeatured = (id) => {
+                setCompanies(prev => prev.map(c => {
+                    if (c.id === id) {
+                        const updated = !c.is_featured;
+                        showToast(`${c.name} featured status: ${updated}`);
+                        return { ...c, is_featured: updated };
+                    }
+                    return c;
+                }));
+            };
+
+            const handleSaveCompany = (e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const companyData = {
+                    id: editingCompany ? editingCompany.id : String(Date.now()),
+                    name: formData.get('name'),
+                    slug: formData.get('name').toLowerCase().replace(/\s+/g, '-'),
+                    category: formData.get('category'),
+                    industry: formData.get('industry'),
+                    company_type: formData.get('company_type'),
+                    country: "Malaysia",
+                    location: formData.get('location'),
+                    career_url: formData.get('career_url'),
+                    internship_url: formData.get('internship_url') || null,
+                    graduate_url: formData.get('graduate_url') || null,
+                    description: formData.get('description'),
+                    is_verified: formData.get('is_verified') === 'on',
+                    is_featured: formData.get('is_featured') === 'on',
+                    initials: formData.get('name').substring(0, 2).toUpperCase(),
+                    logo_bg: '#1e3a8a',
+                    updated_at: new Date().toISOString().split('T')[0]
+                };
+
+                if (editingCompany) {
+                    setCompanies(prev => prev.map(c => c.id === editingCompany.id ? companyData : c));
+                    showToast(`Updated ${companyData.name}`);
+                } else {
+                    setCompanies(prev => [companyData, ...prev]);
+                    showToast(`Added ${companyData.name}`);
+                }
+
+                setEditingCompany(null);
+                setIsAdding(false);
+            };
+
+            return (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
+                        <div>
+                            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Admin Portal Dashboard</h1>
+                            <p className="text-xs text-slate-500">Manage company database, verify external career portals, and feature listings.</p>
+                        </div>
+
+                        <button 
+                            onClick={() => { setIsAdding(true); setEditingCompany(null); }}
+                            className="px-4 py-2.5 bg-brand-600 text-white rounded-xl text-xs font-semibold hover:bg-brand-700 transition"
+                        >
+                            + Add New Company
+                        </button>
+                    </div>
+
+                    {/* Quick Stats Grid */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <div className="text-xs text-slate-500 font-medium">Total Listed</div>
+                            <div className="text-2xl font-extrabold text-slate-900 dark:text-white">{companies.length}</div>
+                        </div>
+                        <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <div className="text-xs text-slate-500 font-medium">Verified Portals</div>
+                            <div className="text-2xl font-extrabold text-emerald-600">{companies.filter(c => c.is_verified).length}</div>
+                        </div>
+                        <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <div className="text-xs text-slate-500 font-medium">With Internships</div>
+                            <div className="text-2xl font-extrabold text-brand-600">{companies.filter(c => c.internship_url).length}</div>
+                        </div>
+                        <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <div className="text-xs text-slate-500 font-medium">Featured Companies</div>
+                            <div className="text-2xl font-extrabold text-purple-600">{companies.filter(c => c.is_featured).length}</div>
+                        </div>
+                    </div>
+
+                    {/* Data Table Filter */}
+                    <div className="flex items-center justify-between gap-4">
+                        <input 
+                            type="text" 
+                            placeholder="Filter admin table..." 
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            className="max-w-xs px-3 py-2 text-xs bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl outline-none"
+                        />
+                        <div className="text-xs text-slate-400">Showing {filtered.length} entries</div>
+                    </div>
+
+                    {/* Table Container */}
+                    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-x-auto">
+                        <table className="w-full text-left text-xs">
+                            <thead className="bg-slate-50 dark:bg-slate-800/60 border-b border-slate-200 dark:border-slate-800 text-slate-500 font-semibold uppercase tracking-wider">
+                                <tr>
+                                    <th className="p-3">Company</th>
+                                    <th className="p-3">Category</th>
+                                    <th className="p-3">Internship</th>
+                                    <th className="p-3">Verified</th>
+                                    <th className="p-3">Featured</th>
+                                    <th className="p-3 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                                {filtered.map(c => (
+                                    <tr key={c.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-800/30">
+                                        <td className="p-3 font-semibold text-slate-900 dark:text-white">
+                                            <div>{c.name}</div>
+                                            <div className="text-[10px] font-normal text-slate-400">{c.location}</div>
+                                        </td>
+                                        <td className="p-3 text-slate-600 dark:text-slate-300">{c.category}</td>
+                                        <td className="p-3">
+                                            {c.internship_url ? <span className="text-emerald-600 font-bold">Yes</span> : <span className="text-slate-400">No</span>}
+                                        </td>
+                                        <td className="p-3">
+                                            <button onClick={() => toggleVerified(c.id)} className="hover:underline">
+                                                {c.is_verified ? '✅ Yes' : '❌ No'}
+                                            </button>
+                                        </td>
+                                        <td className="p-3">
+                                            <button onClick={() => toggleFeatured(c.id)} className="hover:underline">
+                                                {c.is_featured ? '⭐ Featured' : '☆ Standard'}
+                                            </button>
+                                        </td>
+                                        <td className="p-3 text-right space-x-2">
+                                            <button 
+                                                onClick={() => { setEditingCompany(c); setIsAdding(false); }}
+                                                className="text-brand-600 font-semibold hover:underline"
+                                            >
+                                                Edit
+                                            </button>
+                                            <button 
+                                                onClick={() => handleDelete(c.id, c.name)}
+                                                className="text-red-600 font-semibold hover:underline"
+                                            >
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {/* Add / Edit Modal */}
+                    {(isAdding || editingCompany) && (
+                        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+                            <form onSubmit={handleSaveCompany} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 w-full max-w-lg rounded-2xl p-6 space-y-4 shadow-2xl">
+                                <h3 className="font-bold text-base text-slate-900 dark:text-white">
+                                    {editingCompany ? `Edit ${editingCompany.name}` : 'Add New Company'}
+                                </h3>
+
+                                <div className="space-y-3 text-xs">
+                                    <div>
+                                        <label className="block text-slate-500 mb-1">Company Name</label>
+                                        <input required name="name" defaultValue={editingCompany?.name || ''} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                    </div>
+
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <div>
+                                            <label className="block text-slate-500 mb-1">Category</label>
+                                            <input required name="category" defaultValue={editingCompany?.category || 'Technology'} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                        </div>
+                                        <div>
+                                            <label className="block text-slate-500 mb-1">Industry</label>
+                                            <input required name="industry" defaultValue={editingCompany?.industry || 'Software'} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                        </div>
+                                    </div>
+
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <div>
+                                            <label className="block text-slate-500 mb-1">Company Type</label>
+                                            <select name="company_type" defaultValue={editingCompany?.company_type || 'MNC'} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none">
+                                                <option value="MNC">MNC</option>
+                                                <option value="GLC">GLC</option>
+                                                <option value="Local Company">Local Company</option>
+                                                <option value="Fintech">Fintech</option>
+                                                <option value="Government">Government</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label className="block text-slate-500 mb-1">Hub Location</label>
+                                            <input required name="location" defaultValue={editingCompany?.location || 'Kuala Lumpur'} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-slate-500 mb-1">Career URL (https://)</label>
+                                        <input required type="url" name="career_url" defaultValue={editingCompany?.career_url || ''} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-slate-500 mb-1">Internship URL (Optional)</label>
+                                        <input type="url" name="internship_url" defaultValue={editingCompany?.internship_url || ''} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-slate-500 mb-1">Graduate Program URL (Optional)</label>
+                                        <input type="url" name="graduate_url" defaultValue={editingCompany?.graduate_url || ''} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none" />
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-slate-500 mb-1">Description</label>
+                                        <textarea required name="description" rows="3" defaultValue={editingCompany?.description || ''} className="w-full p-2 border border-slate-200 dark:border-slate-800 dark:bg-slate-800 rounded-lg outline-none"></textarea>
+                                    </div>
+
+                                    <div className="flex items-center gap-4 pt-2">
+                                        <label className="flex items-center gap-2 cursor-pointer">
+                                            <input type="checkbox" name="is_verified" defaultChecked={editingCompany?.is_verified ?? true} />
+                                            <span>Mark Verified</span>
+                                        </label>
+                                        <label className="flex items-center gap-2 cursor-pointer">
+                                            <input type="checkbox" name="is_featured" defaultChecked={editingCompany?.is_featured ?? false} />
+                                            <span>Mark Featured</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center justify-end gap-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                                    <button type="button" onClick={() => { setIsAdding(false); setEditingCompany(null); }} className="px-4 py-2 text-xs font-semibold text-slate-500">Cancel</button>
+                                    <button type="submit" className="px-5 py-2 bg-brand-600 text-white text-xs font-semibold rounded-xl">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        function EmptyState({ onReset }) {
+            return (
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-12 text-center space-y-4">
+                    <div className="text-4xl">🔍</div>
+                    <h3 className="font-bold text-lg text-slate-900 dark:text-white">No companies match your filters</h3>
+                    <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                        Try resetting your industry, program, or search filters to view available career portals.
+                    </p>
+                    <button onClick={onReset} className="px-4 py-2 bg-brand-600 text-white rounded-xl text-xs font-semibold hover:bg-brand-700 transition">
+                        Reset All Filters
+                    </button>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
