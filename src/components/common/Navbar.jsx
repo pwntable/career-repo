@@ -107,6 +107,20 @@ export function Navbar({
               </span>
             )}
           </button>
+
+          <button
+            onClick={() => handleNavClick('ai-hub')}
+            className={`px-3 py-2 rounded-lg text-sm font-medium transition flex items-center gap-1.5 ${
+              activeTab === 'ai-hub'
+                ? 'bg-slate-100 dark:bg-slate-800 text-purple-600 dark:text-purple-400'
+                : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'
+            }`}
+          >
+            <span>AI & API Hub</span>
+            <span className="px-1.5 py-0.2 text-[10px] rounded-full bg-purple-600 text-white font-bold tracking-wider uppercase">
+              AI Ready
+            </span>
+          </button>
         </nav>
 
         {/* Action Controls */}
@@ -160,6 +174,12 @@ export function Navbar({
             className="block w-full text-left px-3 py-2 text-sm rounded-md font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
           >
             Saved Companies ({bookmarksCount})
+          </button>
+          <button
+            onClick={() => handleNavClick('ai-hub')}
+            className="block w-full text-left px-3 py-2 text-sm rounded-md font-semibold text-purple-600 dark:text-purple-400 hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            🤖 AI Agent & Developer Hub
           </button>
         </div>
       )}

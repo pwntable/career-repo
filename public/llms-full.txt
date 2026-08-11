@@ -1,0 +1,950 @@
+# CareeRepo Malaysia - Full Machine-Readable Directory
+
+This file contains full structured text specs for all 86 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
+
+### 1. Microsoft (MNC)
+- **Category:** Technology
+- **Industry:** Software & Cloud
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.microsoft.com/
+- **Internship Portal:** https://careers.microsoft.com/v2/global/en/students
+- **Graduate Trainee Portal:** https://careers.microsoft.com/v2/global/en/students
+- **Verified:** Yes
+- **Description:** Global technology leader in software, cloud computing, and AI solutions with strong operational presence in Malaysia.
+
+### 2. Google (MNC)
+- **Category:** Technology
+- **Industry:** Internet & Technology
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.google.com/
+- **Internship Portal:** https://careers.google.com/students/
+- **Graduate Trainee Portal:** https://careers.google.com/students/
+- **Verified:** Yes
+- **Description:** Multinational technology company specializing in search, cloud technology, online advertising, and hardware.
+
+### 3. IBM (MNC)
+- **Category:** Technology
+- **Industry:** IT Services & Consulting
+- **Location:** Cyberjaya
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.ibm.com/careers/
+- **Internship Portal:** https://www.ibm.com/employment/entrylevel/
+- **Graduate Trainee Portal:** https://www.ibm.com/employment/entrylevel/
+- **Verified:** Yes
+- **Description:** Global hybrid cloud and AI infrastructure enterprise provider with extensive global delivery centers in Malaysia.
+
+### 4. Intel (MNC)
+- **Category:** Technology
+- **Industry:** Semiconductor
+- **Location:** Penang / Kulim
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.intel.com/
+- **Internship Portal:** https://jobs.intel.com/en/students-and-graduates/
+- **Graduate Trainee Portal:** https://jobs.intel.com/en/students-and-graduates/
+- **Verified:** Yes
+- **Description:** World-leading semiconductor design and manufacturing corporation with major advanced packaging hubs in Penang and Kulim.
+
+### 5. Dell Technologies (MNC)
+- **Category:** Technology
+- **Industry:** Hardware & IT Systems
+- **Location:** Penang / Cyberjaya
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.dell.com/
+- **Internship Portal:** https://jobs.dell.com/students
+- **Graduate Trainee Portal:** https://jobs.dell.com/students
+- **Verified:** Yes
+- **Description:** Global technology leader providing hardware solutions, enterprise cloud infrastructure, and IT services.
+
+### 6. HP (MNC)
+- **Category:** Technology
+- **Industry:** Hardware & Electronics
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.hp.com/
+- **Internship Portal:** https://jobs.hp.com/students
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global personal systems and printing technologies provider with operations across Southeast Asia.
+
+### 7. Oracle (MNC)
+- **Category:** Technology
+- **Industry:** Software & Cloud
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.oracle.com/
+- **Internship Portal:** https://careers.oracle.com/students-graduates/
+- **Graduate Trainee Portal:** https://careers.oracle.com/students-graduates/
+- **Verified:** Yes
+- **Description:** Enterprise software, cloud infrastructure, and database technology provider.
+
+### 8. Accenture (MNC)
+- **Category:** Consulting
+- **Industry:** IT & Consulting
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.accenture.com/my-en/careers
+- **Internship Portal:** https://www.accenture.com/my-en/careers/students-graduates
+- **Graduate Trainee Portal:** https://www.accenture.com/my-en/careers/students-graduates
+- **Verified:** Yes
+- **Description:** Leading global professional services company specializing in digital, cloud, and cybersecurity transformation.
+
+### 9. Huawei (MNC)
+- **Category:** Telecommunications
+- **Industry:** Telecom & Hardware
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://career.huawei.com/
+- **Internship Portal:** https://career.huawei.com/reccamcode/portal/campus/campus_job.html
+- **Graduate Trainee Portal:** https://career.huawei.com/reccamcode/portal/campus/campus_job.html
+- **Verified:** Yes
+- **Description:** Leading global provider of information and communications technology (ICT) infrastructure and smart devices.
+
+### 10. SAP (MNC)
+- **Category:** Technology
+- **Industry:** Enterprise Software
+- **Location:** Kuala Lumpur
+- **ATS Platform:** SAP SuccessFactors
+- **Official Career Portal:** https://jobs.sap.com/
+- **Internship Portal:** https://jobs.sap.com/content/Students-and-Graduates/
+- **Graduate Trainee Portal:** https://jobs.sap.com/content/Students-and-Graduates/
+- **Verified:** Yes
+- **Description:** World market leader in enterprise application software and enterprise resource planning systems.
+
+### 11. Shell Malaysia (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Energy & Petrochemicals
+- **Location:** Kuala Lumpur / Cyberjaya
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://shell.wd3.myworkdayjobs.com/shellcareers?source=APPLICANT_SOURCE_Malaysia_Local_Page&locationCountry=972dc4ba8d454bc0b893ff84b1529077
+- **Internship Portal:** https://www.shell.com.my/careers/students-and-graduates/internships.html
+- **Graduate Trainee Portal:** https://www.shell.com.my/careers/students-and-graduates/shell-graduate-programme.html
+- **Verified:** Yes
+- **Description:** Global energy and petrochemical group operating in Malaysia for over a century across upstream and downstream.
+
+### 12. ExxonMobil (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Energy
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.exxonmobil.com/
+- **Internship Portal:** https://jobs.exxonmobil.com/content/Students-and-Graduates/
+- **Graduate Trainee Portal:** https://jobs.exxonmobil.com/content/Students-and-Graduates/
+- **Verified:** Yes
+- **Description:** One of the largest publicly traded international energy and chemical companies.
+
+### 13. SLB (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Energy Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.slb.com/
+- **Internship Portal:** https://careers.slb.com/early-careers
+- **Graduate Trainee Portal:** https://careers.slb.com/early-careers
+- **Verified:** Yes
+- **Description:** Global technology company driving energy innovation through reservoir characterization, drilling, and production.
+
+### 14. Halliburton (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Energy Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.halliburton.com/
+- **Internship Portal:** https://jobs.halliburton.com/go/Students-and-Graduates/8501201/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Worldwide provider of products and services to the energy industry.
+
+### 15. Baker Hughes (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Energy Technology
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.bakerhughes.com/
+- **Internship Portal:** https://careers.bakerhughes.com/global/en/students-graduates
+- **Graduate Trainee Portal:** https://careers.bakerhughes.com/global/en/students-graduates
+- **Verified:** Yes
+- **Description:** Energy technology company providing solutions for energy and industrial customers worldwide.
+
+### 16. Technip Energies (MNC)
+- **Category:** Engineering
+- **Industry:** Energy Engineering
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.technipenergies.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Engineering & technology company for the energy transition, with leadership in LNG, hydrogen, and sustainable chemistry.
+
+### 17. Nestlé Malaysia (MNC)
+- **Category:** FMCG
+- **Industry:** Food & Beverages
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.nestle.com.my/jobs
+- **Internship Portal:** https://www.nestle.com.my/jobs/students
+- **Graduate Trainee Portal:** https://www.nestle.com.my/jobs/graduates
+- **Verified:** Yes
+- **Description:** Malaysia's leading Halal food and beverage manufacturer with iconic brands including MILO, MAGGI, and Nescafé.
+
+### 18. Unilever (MNC)
+- **Category:** FMCG
+- **Industry:** Consumer Goods
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.unilever.com/
+- **Internship Portal:** https://careers.unilever.com/internships
+- **Graduate Trainee Portal:** https://careers.unilever.com/unilever-future-leaders-programme
+- **Verified:** Yes
+- **Description:** Multinational consumer goods giant producing leading personal care, home care, and food brands.
+
+### 19. Coca-Cola (MNC)
+- **Category:** FMCG
+- **Industry:** Beverages
+- **Location:** Bandar Enstek, Negeri Sembilan
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.coca-colacompany.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Total beverage company offering over 500 brands in more than 200 countries.
+
+### 20. PepsiCo (MNC)
+- **Category:** FMCG
+- **Industry:** Food & Beverages
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.pepsicojobs.com/
+- **Internship Portal:** https://www.pepsicojobs.com/main/campus
+- **Graduate Trainee Portal:** https://www.pepsicojobs.com/main/campus
+- **Verified:** Yes
+- **Description:** Global food and beverage leader with a portfolio including Lay's, Doritos, Cheetos, Gatorade, Pepsi, and Quaker.
+
+### 21. Mondelez International (MNC)
+- **Category:** FMCG
+- **Industry:** Snack Foods
+- **Location:** Kuala Lumpur / Shah Alam
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.mondelezinternational.com/
+- **Internship Portal:** https://careers.mondelezinternational.com/early-careers
+- **Graduate Trainee Portal:** https://careers.mondelezinternational.com/early-careers
+- **Verified:** Yes
+- **Description:** Global snacking powerhouse behind Cadbury, Oreo, Chips Ahoy!, and Jacob's.
+
+### 22. Procter & Gamble (P&G) (MNC)
+- **Category:** FMCG
+- **Industry:** Consumer Goods
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.pgcareers.com/
+- **Internship Portal:** https://www.pgcareers.com/students
+- **Graduate Trainee Portal:** https://www.pgcareers.com/students
+- **Verified:** Yes
+- **Description:** Global consumer health and personal care giant home to Pampers, Tide, Pantene, Gillette, and Oral-B.
+
+### 23. L'Oréal (MNC)
+- **Category:** FMCG
+- **Industry:** Beauty & Cosmetics
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.loreal.com/
+- **Internship Portal:** https://careers.loreal.com/en/m/students
+- **Graduate Trainee Portal:** https://careers.loreal.com/en/m/students
+- **Verified:** Yes
+- **Description:** World's leading beauty company spanning cosmetics, skincare, hair care, and fragrances.
+
+### 24. Danone (MNC)
+- **Category:** FMCG
+- **Industry:** Food & Nutrition
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.danone.com/
+- **Internship Portal:** https://careers.danone.com/en/students-graduates/
+- **Graduate Trainee Portal:** https://careers.danone.com/en/students-graduates/
+- **Verified:** Yes
+- **Description:** Leading multi-local food and beverage company focused on health-focused nutrition.
+
+### 25. Samsung (MNC)
+- **Category:** Technology
+- **Industry:** Electronics & Tech
+- **Location:** Kuala Lumpur / Seremban
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.samsung.com/my/about-us/careers/
+- **Internship Portal:** https://www.samsung.com/my/about-us/careers/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global innovator in electronics, consumer tech, smartphones, semiconductors, and home appliances.
+
+### 26. Sony (MNC)
+- **Category:** Technology
+- **Industry:** Electronics & Entertainment
+- **Location:** Kuala Lumpur / Bangi
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.sonyjobs.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Creative entertainment and consumer electronics manufacturer with high tech design hubs in Malaysia.
+
+### 27. Panasonic (MNC)
+- **Category:** Technology
+- **Industry:** Electronics
+- **Location:** Shah Alam, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.apac.panasonic.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Diversified electronics and home appliances manufacturing operations across Malaysia.
+
+### 28. Bosch (MNC)
+- **Category:** Engineering
+- **Industry:** Engineering & Auto Tech
+- **Location:** Penang / Petaling Jaya
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.bosch.com/careers/
+- **Internship Portal:** https://www.bosch.com/careers/students/
+- **Graduate Trainee Portal:** https://www.bosch.com/careers/graduates/
+- **Verified:** Yes
+- **Description:** Leading global supplier of technology and services in mobility, industrial tech, and consumer goods.
+
+### 29. Siemens (MNC)
+- **Category:** Engineering
+- **Industry:** Industrial Automation & Energy
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.siemens.com/
+- **Internship Portal:** https://jobs.siemens.com/jobs?page=1&categories=Students%20%26%20Graduates
+- **Graduate Trainee Portal:** https://jobs.siemens.com/jobs?page=1&categories=Students%20%26%20Graduates
+- **Verified:** Yes
+- **Description:** Technology company focused on industry, infrastructure, transport, and healthcare digitalization.
+
+### 30. Western Digital (MNC)
+- **Category:** Technology
+- **Industry:** Semiconductor & Storage
+- **Location:** Penang / Johor / Kuching
+- **ATS Platform:** SmartRecruiters
+- **Official Career Portal:** https://jobs.smartrecruiters.com/WesternDigital
+- **Internship Portal:** https://www.westerndigital.com/company/careers/university-relations
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Data infrastructure manufacturer driving storage innovation in flash memory and hard drives.
+
+### 31. Micron Technology (MNC)
+- **Category:** Semiconductor
+- **Industry:** Memory & Storage
+- **Location:** Penang / Batu Kawan
+- **ATS Platform:** Eightfold AI
+- **Official Career Portal:** https://micron.eightfold.ai/careers
+- **Internship Portal:** https://micron.eightfold.ai/careers?domain=micron.com&query=intern
+- **Graduate Trainee Portal:** https://micron.eightfold.ai/careers?domain=micron.com&query=university
+- **Verified:** Yes
+- **Description:** Global leader in innovative memory and storage solutions accelerating advanced computing.
+
+### 32. Toyota (MNC)
+- **Category:** Automotive
+- **Industry:** Automotive Manufacturing
+- **Location:** Shah Alam, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://career.toyota.com.my/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Automotive pioneer and market leader delivering vehicle assembly, mobility solutions, and distribution in Malaysia.
+
+### 33. Honda Malaysia (Local Company)
+- **Category:** Automotive
+- **Industry:** Automotive Manufacturing
+- **Location:** Melaka / Petaling Jaya
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.honda.com.my/careers
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading automotive manufacturing and distribution joint venture providing popular passenger vehicles.
+
+### 34. BMW (MNC)
+- **Category:** Automotive
+- **Industry:** Automotive & Mobility
+- **Location:** Cyberjaya / Kulim
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.bmwgroup.jobs/
+- **Internship Portal:** https://www.bmwgroup.jobs/de/en/students.html
+- **Graduate Trainee Portal:** https://www.bmwgroup.jobs/de/en/graduates.html
+- **Verified:** Yes
+- **Description:** Premium automobile and motorcycle manufacturer with regional shared service hubs in Cyberjaya.
+
+### 35. Mercedes-Benz (MNC)
+- **Category:** Automotive
+- **Industry:** Automotive & Mobility
+- **Location:** Puchong / Pekan, Pahang
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://group.mercedes-benz.com/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Luxury vehicle automaker with vehicle assembly and customer services regional hubs in Malaysia.
+
+### 36. Volvo (MNC)
+- **Category:** Automotive
+- **Industry:** Automotive & Heavy Equipment
+- **Location:** Shah Alam, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.volvogroup.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Commercial transportation and premium automotive assembly manufacturer.
+
+### 37. HSBC (MNC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://portal.careers.hsbc.com/careers
+- **Internship Portal:** https://www.hsbc.com/careers/students-and-graduates
+- **Graduate Trainee Portal:** https://www.hsbc.com/careers/students-and-graduates
+- **Verified:** Yes
+- **Description:** One of the world's largest banking and financial service organizations with established Islamic and retail banking in Malaysia.
+
+### 38. Standard Chartered (MNC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur / Bukit Jalil
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.sc.com/en/global-careers/
+- **Internship Portal:** https://www.sc.com/en/global-careers/early-careers/
+- **Graduate Trainee Portal:** https://www.sc.com/en/global-careers/early-careers/
+- **Verified:** Yes
+- **Description:** Leading international bank with over 145 years of continuous operational history in Malaysia.
+
+### 39. Citibank (MNC)
+- **Category:** Banking
+- **Industry:** Investment & Retail Banking
+- **Location:** Kuala Lumpur / Penang
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.citi.com/
+- **Internship Portal:** https://jobs.citi.com/students
+- **Graduate Trainee Portal:** https://jobs.citi.com/students
+- **Verified:** Yes
+- **Description:** Global banking partner for institutions with high-value global processing centers in Malaysia.
+
+### 40. UOB (MNC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.uobgroup.com/careers/
+- **Internship Portal:** https://www.uobgroup.com/careers/students-and-graduates/index.html
+- **Graduate Trainee Portal:** https://www.uobgroup.com/careers/students-and-graduates/index.html
+- **Verified:** Yes
+- **Description:** Leading regional bank in Asia offering comprehensive commercial banking, wealth, and treasury services.
+
+### 41. OCBC (MNC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.ocbc.com/group/careers
+- **Internship Portal:** https://www.ocbc.com/group/careers/students-and-graduates
+- **Graduate Trainee Portal:** https://www.ocbc.com/group/careers/students-and-graduates
+- **Verified:** Yes
+- **Description:** Second largest financial services group in Southeast Asia by assets.
+
+### 42. AIA (MNC)
+- **Category:** Insurance
+- **Industry:** Life Insurance & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.aia.com/
+- **Internship Portal:** https://careers.aia.com/content/Students-and-Graduates/
+- **Graduate Trainee Portal:** https://careers.aia.com/content/Students-and-Graduates/
+- **Verified:** Yes
+- **Description:** Largest independent publicly listed pan-Asian life insurance group.
+
+### 43. Prudential (MNC)
+- **Category:** Insurance
+- **Industry:** Insurance & Wealth Management
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.prudentialplc.com/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Asia-focused life insurance and asset management company serving millions of customers.
+
+### 44. Pfizer (MNC)
+- **Category:** Healthcare
+- **Industry:** Pharmaceuticals
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.pfizer.com/about/careers
+- **Internship Portal:** https://www.pfizer.com/about/careers/early-careers
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global biopharmaceutical corporation focused on breakthroughs that change patients' lives.
+
+### 45. AstraZeneca (MNC)
+- **Category:** Healthcare
+- **Industry:** Biopharmaceuticals
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.astrazeneca.com/
+- **Internship Portal:** https://careers.astrazeneca.com/early-talent
+- **Graduate Trainee Portal:** https://careers.astrazeneca.com/early-talent
+- **Verified:** Yes
+- **Description:** Global, science-led biopharmaceutical business focusing on prescription medicines across oncology and rare diseases.
+
+### 46. Novartis (MNC)
+- **Category:** Healthcare
+- **Industry:** Pharmaceuticals
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.novartis.com/careers
+- **Internship Portal:** https://www.novartis.com/careers/early-careers
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Innovative medicine company using science and digital technology to create transformative treatments.
+
+### 47. Roche (MNC)
+- **Category:** Healthcare
+- **Industry:** Pharmaceuticals & Diagnostics
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.roche.com/
+- **Internship Portal:** https://careers.roche.com/global/en/students
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Pioneer in pharmaceuticals and diagnostics focused on advancing science to improve lives.
+
+### 48. B. Braun (MNC)
+- **Category:** Healthcare
+- **Industry:** Medical Technology
+- **Location:** Penang
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.bbraun.com/en/careers.html
+- **Internship Portal:** https://www.bbraun.com/en/careers/students.html
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading medical technology and pharmaceutical solutions manufacturer with major production campus in Penang.
+
+### 49. Abbott (MNC)
+- **Category:** Healthcare
+- **Industry:** Medical Devices & Nutrition
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.jobs.abbott/
+- **Internship Portal:** https://www.jobs.abbott/us/en/students
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global healthcare leader helping people live more fully at all stages of life through medical products.
+
+### 50. Bank Simpanan Nasional (BSN) (GLC)
+- **Category:** Banking
+- **Industry:** Retail Banking
+- **Location:** Kuala Lumpur
+- **ATS Platform:** JotForm Portal
+- **Official Career Portal:** https://bsn.jotform.com/260141204588452
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Malaysia's national savings bank committed to financial inclusion and accessible banking services.
+
+### 51. PETRONAS (GLC)
+- **Category:** Oil & Gas
+- **Industry:** Energy & Chemical Conglomerate
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.petronas.com/
+- **Internship Portal:** https://careers.petronas.com/content/Students-and-Graduates/?locale=en_US
+- **Graduate Trainee Portal:** https://careers.petronas.com/content/Students-and-Graduates/?locale=en_US
+- **Verified:** Yes
+- **Description:** Malaysia's Fortune Global 500 energy company leading upstream, downstream, and sustainable energy projects.
+
+### 52. KWSP (EPF) (Government)
+- **Category:** Government
+- **Industry:** Statutory Body & Pension
+- **Location:** Kuala Lumpur / Kwasa Damansara
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.kwsp.gov.my/en/corporate/careers
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Employees Provident Fund - Premier social security organization managing retirement savings for private sector employees.
+
+### 53. Setel (Startup)
+- **Category:** Fintech
+- **Industry:** Digital Mobility & Payments
+- **Location:** Kuala Lumpur
+- **ATS Platform:** BrioHR
+- **Official Career Portal:** https://boards.briohr.com/setel-n2dr1eygaj
+- **Internship Portal:** https://boards.briohr.com/setel-n2dr1eygaj
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Malaysia's premier e-wallet and e-payment app ecosystem for fuel, parking, EV charging, and retail.
+
+### 54. BHP (MNC)
+- **Category:** Oil & Gas
+- **Industry:** Mining & Energy
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.bhp.com/search/
+- **Internship Portal:** https://careers.bhp.com/content/Global-Graduate-Program/
+- **Graduate Trainee Portal:** https://careers.bhp.com/content/Global-Graduate-Program/
+- **Verified:** Yes
+- **Description:** Global resources company extracting and processing minerals, oil, and gas with global technology services in KL.
+
+### 55. Petron (Local Company)
+- **Category:** Oil & Gas
+- **Industry:** Energy & Refining
+- **Location:** Kuala Lumpur / Port Dickson
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.petron.com.my/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Major oil refining and marketing company operating a vast service station network in Malaysia.
+
+### 56. KWAP (Government)
+- **Category:** Government
+- **Industry:** Statutory Investment Fund
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://career.kwap.my/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Kumpulan Wang Persaraan (Diperbadankan) - Pension fund manager managing public service retirement contributions.
+
+### 57. Maybank (GLC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://maybankjobs.com/#/home
+- **Internship Portal:** https://maybankjobs.com/#/student-and-graduates
+- **Graduate Trainee Portal:** https://maybankjobs.com/#/student-and-graduates
+- **Verified:** Yes
+- **Description:** Malaysia's largest financial services group and one of ASEAN's top banking groups.
+
+### 58. RHB Bank (GLC)
+- **Category:** Banking
+- **Industry:** Banking & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://rhb.wd102.myworkdayjobs.com/RHBExternalCareerSite
+- **Internship Portal:** https://www.rhbgroup.com/careers/young-talents/index.html
+- **Graduate Trainee Portal:** https://www.rhbgroup.com/careers/young-talents/index.html
+- **Verified:** Yes
+- **Description:** Fully integrated financial services group offering retail, corporate, and investment banking.
+
+### 59. Public Bank (Local Company)
+- **Category:** Banking
+- **Industry:** Retail Banking
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.publicbankgroup.com/careers/public-bank-berhad-career-with-us/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Top premier retail bank known for exceptional financial stability and widespread local branch footprint.
+
+### 60. Hong Leong Bank (Local Company)
+- **Category:** Banking
+- **Industry:** Banking & Finance
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://hlb.wd3.myworkdayjobs.com/HLBCareers
+- **Internship Portal:** https://www.hlb.com.my/en/personal-banking/about-us/careers/young-talents.html
+- **Graduate Trainee Portal:** https://www.hlb.com.my/en/personal-banking/about-us/careers/young-talents.html
+- **Verified:** Yes
+- **Description:** Major regional bank providing technology-driven digital banking and wealth solutions.
+
+### 61. AHB Holdings (Local Company)
+- **Category:** Investment
+- **Industry:** Commercial Solutions & Furniture
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** http://www.ahbholdings.com.my/careers.php
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Publicly listed investment holding company specializing in premium office interior solutions.
+
+### 62. ASB (Amanah Saham Nasional) (GLC)
+- **Category:** Investment
+- **Industry:** Wealth & Asset Management
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.pnb.com.my/careers.php
+- **Internship Portal:** https://www.pnb.com.my/careers.php
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Amanah Saham Nasional Berhad under Permodalan Nasional Berhad (PNB) unit trust fund manager.
+
+### 63. Bank Negara Malaysia (BNM) (Government)
+- **Category:** Government
+- **Industry:** Central Bank
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.bnm.gov.my/careers
+- **Internship Portal:** https://www.bnm.gov.my/careers/internship
+- **Graduate Trainee Portal:** https://www.bnm.gov.my/careers/graduate-programme
+- **Verified:** Yes
+- **Description:** Central Bank of Malaysia responsible for monetary stability and financial sector development.
+
+### 64. Versa (Fintech)
+- **Category:** Fintech
+- **Industry:** Wealthtech & Savings
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://versa.com.my/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Digital wealth management app democratizing financial investments and high-yield cash accounts.
+
+### 65. MicroLEAP (Fintech)
+- **Category:** Fintech
+- **Industry:** Peer-to-Peer Financing
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://microleapasia.com/careers
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Shariah-compliant P2P micro-financing platform supporting Malaysian micro & small businesses.
+
+### 66. Khazanah Nasional (Government)
+- **Category:** Investment
+- **Industry:** Sovereign Wealth Fund
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.khazanah.com.my/for-malaysia-and-its-people/careers/recruitment/
+- **Internship Portal:** https://www.khazanah.com.my/for-malaysia-and-its-people/careers/internships/
+- **Graduate Trainee Portal:** https://www.khazanah.com.my/for-malaysia-and-its-people/careers/graduate-trainee/
+- **Verified:** Yes
+- **Description:** Sovereign wealth fund of Malaysia entrusted to grow nation's long-term wealth through strategic investments.
+
+### 67. LTAT (Government)
+- **Category:** Government
+- **Industry:** Armed Forces Pension Fund
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.ltat.gov.my/career/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Lembaga Tabung Angkatan Tentera - Statutory body providing superannuation benefits to members of armed forces.
+
+### 68. Tabung Haji (Government)
+- **Category:** Government
+- **Industry:** Hajj Fund & Financial Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.tabunghaji.gov.my/peluang-kerjaya
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Lembaga Tabung Haji managing Islamic pilgrimage funds and broad investment holdings.
+
+### 69. Tenaga Nasional Berhad (TNB) (GLC)
+- **Category:** Energy
+- **Industry:** Utilities & Electricity
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.tnb.com.my/
+- **Internship Portal:** https://jobs.tnb.com.my/go/Internship-Application/2803901/
+- **Graduate Trainee Portal:** https://jobs.tnb.com.my/
+- **Verified:** Yes
+- **Description:** Largest electricity utility company in Malaysia powering homes, businesses, and clean energy transitions.
+
+### 70. SD Guthrie (GLC)
+- **Category:** Agriculture
+- **Industry:** Plantation & Agribusiness
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.sdguthrie.com/careers
+- **Internship Portal:** https://www.sdguthrie.com/careers/students
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global sustainable palm oil and agribusiness leader formerly known as Sime Darby Plantation.
+
+### 71. Velesto Energy (Local Company)
+- **Category:** Oil & Gas
+- **Industry:** Offshore Drilling
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://velesto.com/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading offshore drilling contractor operating premium jack-up rigs for oil exploration.
+
+### 72. Vantris Energy (Local Company)
+- **Category:** Oil & Gas
+- **Industry:** Energy Solutions
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.vantrisenergy.com/career/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Dynamic energy technical services provider serving oil and gas asset operations.
+
+### 73. Telekom Malaysia (TM) (GLC)
+- **Category:** Telecommunications
+- **Industry:** Telecom & Fiber Broadband
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://tmcareer.tm.com.my/home
+- **Internship Portal:** https://tmcareer.tm.com.my/internship
+- **Graduate Trainee Portal:** https://tmcareer.tm.com.my/young-talent
+- **Verified:** Yes
+- **Description:** National telecommunications leader powering Unifi, enterprise cloud, and 5G connectivity.
+
+### 74. CelcomDigi (GLC)
+- **Category:** Telecommunications
+- **Industry:** Mobile & Telecommunications
+- **Location:** Subang Jaya / PJ
+- **ATS Platform:** SAP SuccessFactors
+- **Official Career Portal:** https://celcomdigi.jobs.hr.cloud.sap/
+- **Internship Portal:** https://celcomdigi.jobs.hr.cloud.sap/
+- **Graduate Trainee Portal:** https://celcomdigi.jobs.hr.cloud.sap/
+- **Verified:** Yes
+- **Description:** Malaysia's largest mobile network operator formed by merger of Celcom and Digi.
+
+### 75. Axiata (GLC)
+- **Category:** Telecommunications
+- **Industry:** Digital Telco Group
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.axiata.com/axiata-career
+- **Internship Portal:** https://www.axiata.com/axiata-career/young-talent
+- **Graduate Trainee Portal:** https://www.axiata.com/axiata-career/young-talent
+- **Verified:** Yes
+- **Description:** Leading Asian telecommunications group spanning digital telcos, infrastructure, and fintech.
+
+### 76. CIMB (GLC)
+- **Category:** Banking
+- **Industry:** Universal Banking Group
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.cimb.com/en/careers/working-at-cimb.html
+- **Internship Portal:** https://www.cimb.com/en/careers/students-and-graduates.html
+- **Graduate Trainee Portal:** https://www.cimb.com/en/careers/students-and-graduates/the-complete-banker.html
+- **Verified:** Yes
+- **Description:** Premier ASEAN universal bank offering consumer, commercial, and investment banking across the region.
+
+### 77. Takaful Malaysia (Local Company)
+- **Category:** Insurance
+- **Industry:** Islamic Insurance
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.takaful-malaysia.com.my/en/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** First Islamic insurance operator in Malaysia providing Family and General Takaful protection.
+
+### 78. MNRB (Local Company)
+- **Category:** Insurance
+- **Industry:** Reinsurance & Retakaful
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.mnrb.com.my/careers
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Investment holding company specializing in national reinsurance and wholesale insurance services.
+
+### 79. Malaysia Airports (MAHB) (GLC)
+- **Category:** Aviation
+- **Industry:** Airport Operations & Aviation
+- **Location:** Sepang, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.malaysiaairports.com.my/
+- **Internship Portal:** https://careers.malaysiaairports.com.my/content/Internship/?locale=en_US
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Airport manager operating KLIA and 38 airports across Malaysia.
+
+### 80. Malaysia Aviation Group (MAG) (GLC)
+- **Category:** Aviation
+- **Industry:** Airlines & Aviation Services
+- **Location:** Sepang, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html#career-journey-mag
+- **Internship Portal:** https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html
+- **Graduate Trainee Portal:** https://www.malaysiaaviationgroup.com.my/en/about-us/join-us.html
+- **Verified:** Yes
+- **Description:** Global aviation group comprising Malaysia Airlines, Firefly, MASwings, and aviation logistics.
+
+### 81. Sime Darby (GLC)
+- **Category:** Conglomerate
+- **Industry:** Automotive & Industrial
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://simedarby.wd3.myworkdayjobs.com/SimeCareerSite
+- **Internship Portal:** https://www.simedarby.com/careers/students-graduates
+- **Graduate Trainee Portal:** https://www.simedarby.com/careers/students-graduates
+- **Verified:** Yes
+- **Description:** Premier partner for luxury motor automotive brands and heavy Caterpillar industrial equipment in Asia Pacific.
+
+### 82. Orkim (Local Company)
+- **Category:** Logistics
+- **Industry:** Maritime & Energy Transport
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.orkim.com.my/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading energy maritime transportation and petroleum product tanker fleet operator in Malaysia.
+
+### 83. Pharmaniaga (GLC)
+- **Category:** Healthcare
+- **Industry:** Pharmaceutical Manufacturing
+- **Location:** Shah Alam, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://pharmaniaga.com/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Largest integrated pharmaceutical group in Malaysia specializing in healthcare logistics and distribution.
+
+### 84. Cenviro (GLC)
+- **Category:** Environmental
+- **Industry:** Waste Management & Eco Services
+- **Location:** Bukit Pelanduk, Negeri Sembilan
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.cenviro.com/careers/
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Flagship scheduled waste management company driving eco-innovations and circular economy solutions.
+
+### 85. EY (Ernst & Young) (MNC)
+- **Category:** Consulting
+- **Industry:** Professional Services & Audit
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.ey.com/en_my/careers
+- **Internship Portal:** https://www.ey.com/en_my/careers/students
+- **Graduate Trainee Portal:** https://www.ey.com/en_my/careers/students
+- **Verified:** Yes
+- **Description:** Big Four global leader in assurance, tax, transaction, and business consulting services.
+
+### 86. Deloitte (MNC)
+- **Category:** Consulting
+- **Industry:** Professional Services & Consulting
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://jobs.sea.deloitte.com/
+- **Internship Portal:** https://jobs.sea.deloitte.com/go/Students-and-Graduates/8501201/
+- **Graduate Trainee Portal:** https://jobs.sea.deloitte.com/go/Students-and-Graduates/8501201/
+- **Verified:** Yes
+- **Description:** Global professional services network delivering audit, consulting, financial advisory, and risk management.
+

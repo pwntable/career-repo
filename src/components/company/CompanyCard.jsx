@@ -63,6 +63,11 @@ export function CompanyCard({ company, isBookmarked, onToggleBookmark, onSelectC
         <div className="flex flex-wrap items-center gap-1.5 mb-3">
           <Badge variant="brand">{company.category}</Badge>
           <Badge variant="default">{company.company_type}</Badge>
+          {company.ats_type && (
+            <Badge variant="amber" className="text-[9px]">
+              ATS: {company.ats_type}
+            </Badge>
+          )}
           {company.internship_url && (
             <Badge variant="emerald" className="gap-1">
               <Briefcase className="w-2.5 h-2.5" /> Internship

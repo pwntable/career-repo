@@ -11,6 +11,7 @@ import { DirectoryView } from './views/DirectoryView';
 import { InternshipView } from './views/InternshipView';
 import { GraduateView } from './views/GraduateView';
 import { SavedView } from './views/SavedView';
+import { AiHubView } from './views/AiHubView';
 
 export default function App() {
   const {
@@ -155,6 +156,10 @@ export default function App() {
             onSelectCompany={setSelectedCompany}
             onExplore={() => setActiveTab('companies')}
           />
+        )}
+
+        {activeTab === 'ai-hub' && (
+          <AiHubView companies={companies} showToast={showToast} />
         )}
       </main>
 

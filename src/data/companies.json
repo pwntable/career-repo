@@ -16,7 +16,8 @@
     "description": "Global technology leader in software, cloud computing, and AI solutions with strong operational presence in Malaysia.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "2",
@@ -35,7 +36,8 @@
     "description": "Multinational technology company specializing in search, cloud technology, online advertising, and hardware.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "3",
@@ -54,7 +56,8 @@
     "description": "Global hybrid cloud and AI infrastructure enterprise provider with extensive global delivery centers in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "4",
@@ -73,7 +76,8 @@
     "description": "World-leading semiconductor design and manufacturing corporation with major advanced packaging hubs in Penang and Kulim.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "5",
@@ -92,7 +96,8 @@
     "description": "Global technology leader providing hardware solutions, enterprise cloud infrastructure, and IT services.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "6",
@@ -111,7 +116,8 @@
     "description": "Global personal systems and printing technologies provider with operations across Southeast Asia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "7",
@@ -130,7 +136,8 @@
     "description": "Enterprise software, cloud infrastructure, and database technology provider.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "8",
@@ -149,7 +156,8 @@
     "description": "Leading global professional services company specializing in digital, cloud, and cybersecurity transformation.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "9",
@@ -168,7 +176,8 @@
     "description": "Leading global provider of information and communications technology (ICT) infrastructure and smart devices.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "10",
@@ -187,7 +196,8 @@
     "description": "World market leader in enterprise application software and enterprise resource planning systems.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "SAP SuccessFactors"
   },
   {
     "id": "11",
@@ -206,7 +216,8 @@
     "description": "Global energy and petrochemical group operating in Malaysia for over a century across upstream and downstream.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Workday"
   },
   {
     "id": "12",
@@ -225,7 +236,8 @@
     "description": "One of the largest publicly traded international energy and chemical companies.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "13",
@@ -244,7 +256,8 @@
     "description": "Global technology company driving energy innovation through reservoir characterization, drilling, and production.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "14",
@@ -263,7 +276,8 @@
     "description": "Worldwide provider of products and services to the energy industry.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "15",
@@ -282,7 +296,8 @@
     "description": "Energy technology company providing solutions for energy and industrial customers worldwide.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "16",
@@ -301,7 +316,8 @@
     "description": "Engineering & technology company for the energy transition, with leadership in LNG, hydrogen, and sustainable chemistry.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "17",
@@ -320,7 +336,8 @@
     "description": "Malaysia's leading Halal food and beverage manufacturer with iconic brands including MILO, MAGGI, and Nescafé.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "18",
@@ -339,7 +356,8 @@
     "description": "Multinational consumer goods giant producing leading personal care, home care, and food brands.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "19",
@@ -358,7 +376,8 @@
     "description": "Total beverage company offering over 500 brands in more than 200 countries.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "20",
@@ -377,7 +396,8 @@
     "description": "Global food and beverage leader with a portfolio including Lay's, Doritos, Cheetos, Gatorade, Pepsi, and Quaker.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "21",
@@ -396,7 +416,8 @@
     "description": "Global snacking powerhouse behind Cadbury, Oreo, Chips Ahoy!, and Jacob's.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "22",
@@ -415,7 +436,8 @@
     "description": "Global consumer health and personal care giant home to Pampers, Tide, Pantene, Gillette, and Oral-B.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "23",
@@ -434,7 +456,8 @@
     "description": "World's leading beauty company spanning cosmetics, skincare, hair care, and fragrances.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "24",
@@ -453,7 +476,8 @@
     "description": "Leading multi-local food and beverage company focused on health-focused nutrition.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "25",
@@ -472,7 +496,8 @@
     "description": "Global innovator in electronics, consumer tech, smartphones, semiconductors, and home appliances.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "26",
@@ -491,7 +516,8 @@
     "description": "Creative entertainment and consumer electronics manufacturer with high tech design hubs in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "27",
@@ -510,7 +536,8 @@
     "description": "Diversified electronics and home appliances manufacturing operations across Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "28",
@@ -529,7 +556,8 @@
     "description": "Leading global supplier of technology and services in mobility, industrial tech, and consumer goods.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "29",
@@ -548,7 +576,8 @@
     "description": "Technology company focused on industry, infrastructure, transport, and healthcare digitalization.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "30",
@@ -567,7 +596,8 @@
     "description": "Data infrastructure manufacturer driving storage innovation in flash memory and hard drives.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "SmartRecruiters"
   },
   {
     "id": "31",
@@ -586,7 +616,8 @@
     "description": "Global leader in innovative memory and storage solutions accelerating advanced computing.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Eightfold AI"
   },
   {
     "id": "32",
@@ -605,7 +636,8 @@
     "description": "Automotive pioneer and market leader delivering vehicle assembly, mobility solutions, and distribution in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "33",
@@ -624,7 +656,8 @@
     "description": "Leading automotive manufacturing and distribution joint venture providing popular passenger vehicles.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "34",
@@ -643,7 +676,8 @@
     "description": "Premium automobile and motorcycle manufacturer with regional shared service hubs in Cyberjaya.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "35",
@@ -662,7 +696,8 @@
     "description": "Luxury vehicle automaker with vehicle assembly and customer services regional hubs in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "36",
@@ -681,7 +716,8 @@
     "description": "Commercial transportation and premium automotive assembly manufacturer.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "37",
@@ -700,7 +736,8 @@
     "description": "One of the world's largest banking and financial service organizations with established Islamic and retail banking in Malaysia.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "38",
@@ -719,7 +756,8 @@
     "description": "Leading international bank with over 145 years of continuous operational history in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "39",
@@ -738,7 +776,8 @@
     "description": "Global banking partner for institutions with high-value global processing centers in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "40",
@@ -757,7 +796,8 @@
     "description": "Leading regional bank in Asia offering comprehensive commercial banking, wealth, and treasury services.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "41",
@@ -776,7 +816,8 @@
     "description": "Second largest financial services group in Southeast Asia by assets.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "42",
@@ -795,7 +836,8 @@
     "description": "Largest independent publicly listed pan-Asian life insurance group.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "43",
@@ -814,7 +856,8 @@
     "description": "Asia-focused life insurance and asset management company serving millions of customers.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "44",
@@ -833,7 +876,8 @@
     "description": "Global biopharmaceutical corporation focused on breakthroughs that change patients' lives.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "45",
@@ -852,7 +896,8 @@
     "description": "Global, science-led biopharmaceutical business focusing on prescription medicines across oncology and rare diseases.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "46",
@@ -871,7 +916,8 @@
     "description": "Innovative medicine company using science and digital technology to create transformative treatments.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "47",
@@ -890,7 +936,8 @@
     "description": "Pioneer in pharmaceuticals and diagnostics focused on advancing science to improve lives.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "48",
@@ -909,7 +956,8 @@
     "description": "Leading medical technology and pharmaceutical solutions manufacturer with major production campus in Penang.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "49",
@@ -928,7 +976,8 @@
     "description": "Global healthcare leader helping people live more fully at all stages of life through medical products.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "50",
@@ -947,7 +996,8 @@
     "description": "Malaysia's national savings bank committed to financial inclusion and accessible banking services.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "JotForm Portal"
   },
   {
     "id": "51",
@@ -966,7 +1016,8 @@
     "description": "Malaysia's Fortune Global 500 energy company leading upstream, downstream, and sustainable energy projects.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "52",
@@ -985,7 +1036,8 @@
     "description": "Employees Provident Fund - Premier social security organization managing retirement savings for private sector employees.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "53",
@@ -1004,7 +1056,8 @@
     "description": "Malaysia's premier e-wallet and e-payment app ecosystem for fuel, parking, EV charging, and retail.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "BrioHR"
   },
   {
     "id": "54",
@@ -1023,7 +1076,8 @@
     "description": "Global resources company extracting and processing minerals, oil, and gas with global technology services in KL.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "55",
@@ -1042,7 +1096,8 @@
     "description": "Major oil refining and marketing company operating a vast service station network in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "56",
@@ -1061,7 +1116,8 @@
     "description": "Kumpulan Wang Persaraan (Diperbadankan) - Pension fund manager managing public service retirement contributions.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "57",
@@ -1080,7 +1136,8 @@
     "description": "Malaysia's largest financial services group and one of ASEAN's top banking groups.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "58",
@@ -1099,7 +1156,8 @@
     "description": "Fully integrated financial services group offering retail, corporate, and investment banking.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Workday"
   },
   {
     "id": "59",
@@ -1118,7 +1176,8 @@
     "description": "Top premier retail bank known for exceptional financial stability and widespread local branch footprint.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "60",
@@ -1137,7 +1196,8 @@
     "description": "Major regional bank providing technology-driven digital banking and wealth solutions.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Workday"
   },
   {
     "id": "61",
@@ -1156,7 +1216,8 @@
     "description": "Publicly listed investment holding company specializing in premium office interior solutions.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "62",
@@ -1175,7 +1236,8 @@
     "description": "Amanah Saham Nasional Berhad under Permodalan Nasional Berhad (PNB) unit trust fund manager.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "63",
@@ -1194,7 +1256,8 @@
     "description": "Central Bank of Malaysia responsible for monetary stability and financial sector development.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "64",
@@ -1213,7 +1276,8 @@
     "description": "Digital wealth management app democratizing financial investments and high-yield cash accounts.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "65",
@@ -1232,7 +1296,8 @@
     "description": "Shariah-compliant P2P micro-financing platform supporting Malaysian micro & small businesses.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "66",
@@ -1251,7 +1316,8 @@
     "description": "Sovereign wealth fund of Malaysia entrusted to grow nation's long-term wealth through strategic investments.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "67",
@@ -1270,7 +1336,8 @@
     "description": "Lembaga Tabung Angkatan Tentera - Statutory body providing superannuation benefits to members of armed forces.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "68",
@@ -1289,7 +1356,8 @@
     "description": "Lembaga Tabung Haji managing Islamic pilgrimage funds and broad investment holdings.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "69",
@@ -1308,7 +1376,8 @@
     "description": "Largest electricity utility company in Malaysia powering homes, businesses, and clean energy transitions.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "70",
@@ -1327,7 +1396,8 @@
     "description": "Global sustainable palm oil and agribusiness leader formerly known as Sime Darby Plantation.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "71",
@@ -1346,7 +1416,8 @@
     "description": "Leading offshore drilling contractor operating premium jack-up rigs for oil exploration.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "72",
@@ -1365,7 +1436,8 @@
     "description": "Dynamic energy technical services provider serving oil and gas asset operations.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "73",
@@ -1384,7 +1456,8 @@
     "description": "National telecommunications leader powering Unifi, enterprise cloud, and 5G connectivity.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "74",
@@ -1403,7 +1476,8 @@
     "description": "Malaysia's largest mobile network operator formed by merger of Celcom and Digi.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "SAP SuccessFactors"
   },
   {
     "id": "75",
@@ -1422,7 +1496,8 @@
     "description": "Leading Asian telecommunications group spanning digital telcos, infrastructure, and fintech.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "76",
@@ -1441,7 +1516,8 @@
     "description": "Premier ASEAN universal bank offering consumer, commercial, and investment banking across the region.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "77",
@@ -1460,7 +1536,8 @@
     "description": "First Islamic insurance operator in Malaysia providing Family and General Takaful protection.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "78",
@@ -1479,7 +1556,8 @@
     "description": "Investment holding company specializing in national reinsurance and wholesale insurance services.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "79",
@@ -1498,7 +1576,8 @@
     "description": "Airport manager operating KLIA and 38 airports across Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "80",
@@ -1517,7 +1596,8 @@
     "description": "Global aviation group comprising Malaysia Airlines, Firefly, MASwings, and aviation logistics.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "81",
@@ -1536,7 +1616,8 @@
     "description": "Premier partner for luxury motor automotive brands and heavy Caterpillar industrial equipment in Asia Pacific.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Workday"
   },
   {
     "id": "82",
@@ -1555,7 +1636,8 @@
     "description": "Leading energy maritime transportation and petroleum product tanker fleet operator in Malaysia.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "83",
@@ -1574,7 +1656,8 @@
     "description": "Largest integrated pharmaceutical group in Malaysia specializing in healthcare logistics and distribution.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "84",
@@ -1593,7 +1676,8 @@
     "description": "Flagship scheduled waste management company driving eco-innovations and circular economy solutions.",
     "is_verified": true,
     "is_featured": false,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "85",
@@ -1612,7 +1696,8 @@
     "description": "Big Four global leader in assurance, tax, transaction, and business consulting services.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   },
   {
     "id": "86",
@@ -1631,6 +1716,7 @@
     "description": "Global professional services network delivering audit, consulting, financial advisory, and risk management.",
     "is_verified": true,
     "is_featured": true,
-    "updated_at": "2026-08-01"
+    "updated_at": "2026-08-01",
+    "ats_type": "Custom Corporate Portal"
   }
 ]
