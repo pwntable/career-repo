@@ -13,7 +13,7 @@ export function Footer({ totalCount, onCategorySelect }) {
               <span className="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white text-sm font-black">
                 C
               </span>
-              CareerHub Malaysia
+              CareeRepo Malaysia
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md leading-relaxed">
               Curated official corporate career and internship portal directory in Malaysia. Directly access verified corporate application pages for MNCs, GLCs, statutory bodies, and tech leaders.
@@ -47,13 +47,13 @@ export function Footer({ totalCount, onCategorySelect }) {
               About & Disclaimer
             </h4>
             <p className="text-[11px] text-slate-400 leading-normal">
-              CareerHub Malaysia is an independent directory service linking candidates directly to corporate career web pages. All trademarks belong to their respective corporate owners.
+              CareeRepo Malaysia is an independent directory service linking candidates directly to corporate career web pages. All trademarks belong to their respective corporate owners.
             </p>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <p>© {new Date().getFullYear()} CareerHub MY Directory. Built for Malaysian Talents.</p>
+          <p>© {new Date().getFullYear()} CareeRepo MY Directory. Built for Malaysian Talents.</p>
           <div className="flex items-center gap-1.5 text-xs">
             <span>Developed by</span>
             <a

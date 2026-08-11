@@ -35,7 +35,7 @@ export function Navbar({
           </div>
           <div>
             <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
-              CareerHub{' '}
+              CareeRepo{' '}
               <span className="text-xs px-2 py-0.5 rounded-full bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 font-semibold">
                 MY
               </span>

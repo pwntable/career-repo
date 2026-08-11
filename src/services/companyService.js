@@ -58,7 +58,7 @@ export const companyService = {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(companies, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `career_hub_companies_${new Date().toISOString().split('T')[0]}.json`);
+    downloadAnchor.setAttribute("download", `careerepo_companies_${new Date().toISOString().split('T')[0]}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
