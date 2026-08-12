@@ -1,6 +1,6 @@
 # CareeRepo Malaysia - Full Machine-Readable Directory
 
-This file contains full structured text specs for all 108 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
+This file contains full structured text specs for all 109 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
 
 ### 1. Microsoft (MNC)
 - **Category:** Technology
@@ -1189,4 +1189,15 @@ This file contains full structured text specs for all 108 verified corporate car
 - **Graduate Trainee Portal:** N/A
 - **Verified:** Yes
 - **Description:** Malaysia’s flagship contactless payment network operator for highway tolling, transit ticketing, and smart card solutions.
+
+### 109. Xsolla (MNC)
+- **Category:** Fintech
+- **Industry:** Video Game Commerce & Monetization
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://xsolla.com/careers
+- **Internship Portal:** https://xsolla.com/careers
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global video game commerce and digital payment company offering game developers robust monetization, publishing, and payment solutions.
 

@@ -2158,5 +2158,25 @@
     "updated_at": "2026-08-12",
     "ats_type": "Custom Corporate Portal",
     "id": "108"
+  },
+  {
+    "id": "109",
+    "name": "Xsolla",
+    "slug": "xsolla",
+    "category": "Fintech",
+    "industry": "Video Game Commerce & Monetization",
+    "country": "Malaysia",
+    "company_type": "MNC",
+    "location": "Kuala Lumpur",
+    "logo_bg": "#ff0055",
+    "initials": "XSL",
+    "career_url": "https://xsolla.com/careers",
+    "internship_url": "https://xsolla.com/careers",
+    "graduate_url": null,
+    "description": "Global video game commerce and digital payment company offering game developers robust monetization, publishing, and payment solutions.",
+    "is_verified": true,
+    "is_featured": true,
+    "updated_at": "2026-08-12",
+    "ats_type": "Custom Corporate Portal"
   }
 ]

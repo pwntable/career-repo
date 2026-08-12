@@ -1,5 +1,5 @@
 # CareeRepo Malaysia (https://github.com/pwntable/career-repo)
-> Official Corporate Career & Internship Directory in Malaysia (108 Verified Employers)
+> Official Corporate Career & Internship Directory in Malaysia (109 Verified Employers)
 
 ## Project Overview
 CareeRepo MY is a machine-readable directory providing direct, verified links to official career, internship, and graduate trainee portals of MNCs, GLCs, statutory bodies, and tech companies operating in Malaysia.
@@ -16,7 +16,7 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - Government & Statutory Bodies
 - Fintech & Startups
 
-## Company Directory Index (108 Portals)
+## Company Directory Index (109 Portals)
 - [Microsoft](https://careers.microsoft.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Google](https://careers.google.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [IBM](https://www.ibm.com/careers/): Technology | MNC | Cyberjaya (ATS: Custom Corporate Portal)
@@ -125,3 +125,4 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - [Monsta (Animonsta Studios)](https://monsta.com/monsta-career/#positions): Media | Local Company | Cyberjaya (ATS: Custom Corporate Portal)
 - [TNG Digital (Touch 'n Go eWallet)](https://www.tngdigital.com.my/careers/jobs): Fintech | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Touch 'n Go Group](https://www.touchngo.com.my/about-us/career): Fintech | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Xsolla](https://xsolla.com/careers): Fintech | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
