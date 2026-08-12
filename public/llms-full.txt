@@ -1,6 +1,6 @@
 # CareeRepo Malaysia - Full Machine-Readable Directory
 
-This file contains full structured text specs for all 87 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
+This file contains full structured text specs for all 108 verified corporate career portals in Malaysia, optimized for LLM context processing and AI Browser Subagents.
 
 ### 1. Microsoft (MNC)
 - **Category:** Technology
@@ -958,4 +958,235 @@ This file contains full structured text specs for all 87 verified corporate care
 - **Graduate Trainee Portal:** N/A
 - **Verified:** Yes
 - **Description:** Malaysia's premier digital food and lifestyle media platform producing viral food guides, video content, and local dining recommendations.
+
+### 88. Shopee Malaysia (MNC)
+- **Category:** E-Commerce
+- **Industry:** E-Commerce & Digital Marketplace
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.shopee.com.my/
+- **Internship Portal:** https://careers.shopee.com.my/students
+- **Graduate Trainee Portal:** https://careers.shopee.com.my/students
+- **Verified:** Yes
+- **Description:** Leading e-commerce platform in Southeast Asia and Taiwan providing seamless online shopping and digital payments.
+
+### 89. Lazada Malaysia (MNC)
+- **Category:** E-Commerce
+- **Industry:** E-Commerce & Digital Logistics
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.lazada.com/en/careers/job-search/?category=
+- **Internship Portal:** https://www.lazada.com/en/careers/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Pioneer e-commerce platform in Southeast Asia backed by Alibaba Group powering digital retail infrastructure.
+
+### 90. ByteDance / TikTok (MNC)
+- **Category:** Technology
+- **Industry:** Social Media & AI Content Platform
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://joinbytedance.com/search?keyword=&recruitment_id_list=&job_category_id_list=&subject_id_list=&location_code_list=&limit=12&offset=0
+- **Internship Portal:** https://joinbytedance.com/campus
+- **Graduate Trainee Portal:** https://joinbytedance.com/campus
+- **Verified:** Yes
+- **Description:** Global technology company operating TikTok, Lark, and innovative digital content platforms with major operational hubs in KL.
+
+### 91. Maxis (Local Company)
+- **Category:** Telecommunications
+- **Industry:** Telecom & Fiber Converged Solutions
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://www.maxis.com.my/en/about-maxis/career/
+- **Internship Portal:** https://www.maxis.com.my/en/about-maxis/career/young-talents/
+- **Graduate Trainee Portal:** https://www.maxis.com.my/en/about-maxis/career/young-talents/
+- **Verified:** Yes
+- **Description:** Malaysia’s leading integrated telecommunications and digital connectivity provider powering consumer and enterprise networks.
+
+### 92. U Mobile (Local Company)
+- **Category:** Telecommunications
+- **Industry:** Mobile Telecommunications
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Rymnet Portal
+- **Official Career Portal:** https://um.rymnet.com/career/
+- **Internship Portal:** https://um.rymnet.com/career/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Award-winning mobile data network operator delivering high-speed 5G mobile and digital lifestyle services.
+
+### 93. Liberty Insurance Malaysia (MNC)
+- **Category:** Insurance
+- **Industry:** General & Motor Insurance
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.libertyinsurance.com.my/careers
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading general insurance provider operating nationwide offering auto, property, personal health, and commercial coverage.
+
+### 94. SRKK Group (Local Company)
+- **Category:** Technology
+- **Industry:** IT Transformation & Managed Cloud
+- **Location:** Petaling Jaya, Selangor
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.srkk.com/findcareers/
+- **Internship Portal:** https://www.srkk.com/findcareers/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Premier end-to-end IT digital transformation consultancy specializing in cloud, hardware infrastructure, and cybersecurity.
+
+### 95. Allianz Malaysia (MNC)
+- **Category:** Insurance
+- **Industry:** Financial & General Insurance Services
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Phenom
+- **Official Career Portal:** https://careers.allianz.com/global/en/search-results?keywords=AI&p=ChIJ5-rvAcdJzDERfSgcL1uO2fQ&location=Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia
+- **Internship Portal:** https://careers.allianz.com/global/en/students
+- **Graduate Trainee Portal:** https://careers.allianz.com/global/en/graduates
+- **Verified:** Yes
+- **Description:** World leading insurer and financial services manager providing comprehensive life, general, and asset protection in Malaysia.
+
+### 96. Great Eastern Life (MNC)
+- **Category:** Insurance
+- **Industry:** Life Insurance & Wealth Takaful
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Oracle Taleo
+- **Official Career Portal:** https://gecareers.taleo.net/careersection/ex_malaysia/jobsearch.ftl?lang=en&portal=10116760849
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Oldest and most established life insurance group in Malaysia and Singapore protecting millions of policyholders.
+
+### 97. Etiqa Insurance & Takaful (GLC)
+- **Category:** Insurance
+- **Industry:** Life & General Insurance & Takaful
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.etiqa.com/career/
+- **Internship Portal:** https://www.etiqa.com/career/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Leading digital insurer and Takaful provider in ASEAN under the Maybank Group delivering humanized insurance.
+
+### 98. TIME dotCom (Local Company)
+- **Category:** Telecommunications
+- **Industry:** Optical Fiber Broadband & Data Centers
+- **Location:** Shah Alam / Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.time.com.my/search
+- **Internship Portal:** https://careers.time.com.my/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Telecommunications provider specializing in 100% pure optical fiber broadband, cloud computing, and cloud data center infrastructure.
+
+### 99. Hausboom (Local Company)
+- **Category:** FMCG
+- **Industry:** Beverage Manufacturing & Lifestyle
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.hausboom.com/careers
+- **Internship Portal:** https://www.hausboom.com/careers
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Vibrant Malaysian sparkling juice and lifestyle beverage brand rapidly expanding retail distribution across ASEAN.
+
+### 100. ING Group (MNC)
+- **Category:** Banking
+- **Industry:** International Commercial Banking & IT
+- **Location:** Kuala Lumpur / Global
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/INTERNSHIP-SOFTWARE-ENGINEER_REQ-10119555
+- **Internship Portal:** https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/INTERNSHIP-SOFTWARE-ENGINEER_REQ-10119555
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Dutch multinational banking and financial services corporation with strong digital software engineering hubs.
+
+### 101. AMD (MNC)
+- **Category:** Semiconductor
+- **Industry:** High-Performance Computing & GPUs
+- **Location:** Penang
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://careers.amd.com/students/jobs
+- **Internship Portal:** https://careers.amd.com/students/jobs
+- **Graduate Trainee Portal:** https://careers.amd.com/students/jobs
+- **Verified:** Yes
+- **Description:** Global semiconductor innovator designing Ryzen, EPYC, and Radeon high-performance graphics and chiplet processors.
+
+### 102. AWS (Amazon Web Services) (MNC)
+- **Category:** Technology
+- **Industry:** Cloud Infrastructure & Enterprise AI
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Amazon Jobs
+- **Official Career Portal:** https://aws.amazon.com/careers/
+- **Internship Portal:** https://aws.amazon.com/careers/
+- **Graduate Trainee Portal:** https://aws.amazon.com/careers/
+- **Verified:** Yes
+- **Description:** World’s most comprehensive cloud platform deploying massive cloud region infrastructure and enterprise services in Malaysia.
+
+### 103. Amazon Malaysia (MNC)
+- **Category:** Technology
+- **Industry:** Technology & Cloud Operations
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Amazon Jobs
+- **Official Career Portal:** https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&business_category[]=amazon-web-services&distanceType=Mi&radius=24km&loc_query=Malaysia&country=MYS
+- **Internship Portal:** https://www.amazon.jobs/en/search?loc_query=Malaysia
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Multinational tech conglomerate focusing on e-commerce, cloud computing, online streaming, and artificial intelligence.
+
+### 104. NVIDIA (MNC)
+- **Category:** Technology
+- **Industry:** AI Semiconductors, GPUs & Supercomputing
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Workday
+- **Official Career Portal:** https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+- **Internship Portal:** https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+- **Graduate Trainee Portal:** https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+- **Verified:** Yes
+- **Description:** Pioneer in accelerated computing, AI hardware design, graphics processors, and generative AI supercomputing hubs.
+
+### 105. Wise (formerly TransferWise) (MNC)
+- **Category:** Fintech
+- **Industry:** Global Cross-Border Money Transfers
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Greenhouse
+- **Official Career Portal:** https://wise.jobs/jobs
+- **Internship Portal:** https://wise.jobs/jobs
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Global fintech company building multi-currency accounts and instant international money transfers with operational hubs in KL.
+
+### 106. Monsta (Animonsta Studios) (Local Company)
+- **Category:** Media
+- **Industry:** 3D Animation, Film & Entertainment
+- **Location:** Cyberjaya
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://monsta.com/monsta-career/#positions
+- **Internship Portal:** https://monsta.com/monsta-career/
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Premier Malaysian character IP animation studio behind global hits including BoBoiBoy, Mechamato, and Papa Pipi.
+
+### 107. TNG Digital (Touch 'n Go eWallet) (Local Company)
+- **Category:** Fintech
+- **Industry:** Digital Payments & Financial Ecosystem
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.tngdigital.com.my/careers/jobs
+- **Internship Portal:** https://www.tngdigital.com.my/careers/jobs
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Malaysia’s largest e-wallet platform providing digital payments, investments, micro-insurance, and QR solutions.
+
+### 108. Touch 'n Go Group (Local Company)
+- **Category:** Fintech
+- **Industry:** Transportation Toll & Smart Mobility
+- **Location:** Kuala Lumpur
+- **ATS Platform:** Custom Corporate Portal
+- **Official Career Portal:** https://www.touchngo.com.my/about-us/career
+- **Internship Portal:** N/A
+- **Graduate Trainee Portal:** N/A
+- **Verified:** Yes
+- **Description:** Malaysia’s flagship contactless payment network operator for highway tolling, transit ticketing, and smart card solutions.
 

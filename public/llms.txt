@@ -1,5 +1,5 @@
 # CareeRepo Malaysia (https://github.com/pwntable/career-repo)
-> Official Corporate Career & Internship Directory in Malaysia (87 Verified Employers)
+> Official Corporate Career & Internship Directory in Malaysia (108 Verified Employers)
 
 ## Project Overview
 CareeRepo MY is a machine-readable directory providing direct, verified links to official career, internship, and graduate trainee portals of MNCs, GLCs, statutory bodies, and tech companies operating in Malaysia.
@@ -16,7 +16,7 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - Government & Statutory Bodies
 - Fintech & Startups
 
-## Company Directory Index (87 Portals)
+## Company Directory Index (108 Portals)
 - [Microsoft](https://careers.microsoft.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Google](https://careers.google.com/): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [IBM](https://www.ibm.com/careers/): Technology | MNC | Cyberjaya (ATS: Custom Corporate Portal)
@@ -104,3 +104,24 @@ CareeRepo MY is a machine-readable directory providing direct, verified links to
 - [EY (Ernst & Young)](https://www.ey.com/en_my/careers): Consulting | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [Deloitte](https://jobs.sea.deloitte.com/): Consulting | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
 - [KL Foodie](https://klfoodie.com/careers/): Media | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Shopee Malaysia](https://careers.shopee.com.my/): E-Commerce | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Lazada Malaysia](https://www.lazada.com/en/careers/job-search/?category=): E-Commerce | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [ByteDance / TikTok](https://joinbytedance.com/search?keyword=&recruitment_id_list=&job_category_id_list=&subject_id_list=&location_code_list=&limit=12&offset=0): Technology | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Maxis](https://www.maxis.com.my/en/about-maxis/career/): Telecommunications | Local Company | Kuala Lumpur (ATS: Workday)
+- [U Mobile](https://um.rymnet.com/career/): Telecommunications | Local Company | Kuala Lumpur (ATS: Rymnet Portal)
+- [Liberty Insurance Malaysia](https://www.libertyinsurance.com.my/careers): Insurance | MNC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [SRKK Group](https://www.srkk.com/findcareers/): Technology | Local Company | Petaling Jaya, Selangor (ATS: Custom Corporate Portal)
+- [Allianz Malaysia](https://careers.allianz.com/global/en/search-results?keywords=AI&p=ChIJ5-rvAcdJzDERfSgcL1uO2fQ&location=Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia): Insurance | MNC | Kuala Lumpur (ATS: Phenom)
+- [Great Eastern Life](https://gecareers.taleo.net/careersection/ex_malaysia/jobsearch.ftl?lang=en&portal=10116760849): Insurance | MNC | Kuala Lumpur (ATS: Oracle Taleo)
+- [Etiqa Insurance & Takaful](https://www.etiqa.com/career/): Insurance | GLC | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [TIME dotCom](https://careers.time.com.my/search): Telecommunications | Local Company | Shah Alam / Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Hausboom](https://www.hausboom.com/careers): FMCG | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [ING Group](https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/INTERNSHIP-SOFTWARE-ENGINEER_REQ-10119555): Banking | MNC | Kuala Lumpur / Global (ATS: Workday)
+- [AMD](https://careers.amd.com/students/jobs): Semiconductor | MNC | Penang (ATS: Custom Corporate Portal)
+- [AWS (Amazon Web Services)](https://aws.amazon.com/careers/): Technology | MNC | Kuala Lumpur (ATS: Amazon Jobs)
+- [Amazon Malaysia](https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&business_category[]=amazon-web-services&distanceType=Mi&radius=24km&loc_query=Malaysia&country=MYS): Technology | MNC | Kuala Lumpur (ATS: Amazon Jobs)
+- [NVIDIA](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite): Technology | MNC | Kuala Lumpur (ATS: Workday)
+- [Wise (formerly TransferWise)](https://wise.jobs/jobs): Fintech | MNC | Kuala Lumpur (ATS: Greenhouse)
+- [Monsta (Animonsta Studios)](https://monsta.com/monsta-career/#positions): Media | Local Company | Cyberjaya (ATS: Custom Corporate Portal)
+- [TNG Digital (Touch 'n Go eWallet)](https://www.tngdigital.com.my/careers/jobs): Fintech | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
+- [Touch 'n Go Group](https://www.touchngo.com.my/about-us/career): Fintech | Local Company | Kuala Lumpur (ATS: Custom Corporate Portal)
