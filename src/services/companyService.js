@@ -1,6 +1,6 @@
 import seedCompanies from '../data/companies.json';
 
-const STORAGE_KEY_COMPANIES = 'ch_companies_v1';
+const STORAGE_KEY_COMPANIES = 'ch_companies_v2';
 const STORAGE_KEY_BOOKMARKS = 'ch_bookmarks';
 const STORAGE_KEY_THEME = 'ch_theme';
 
@@ -8,7 +8,23 @@ export const companyService = {
   getCompanies: () => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY_COMPANIES);
-      return saved ? JSON.parse(saved) : seedCompanies;
+      if (!saved) {
+        localStorage.setItem(STORAGE_KEY_COMPANIES, JSON.stringify(seedCompanies));
+        return seedCompanies;
+      }
+      
+      const parsedSaved = JSON.parse(saved);
+      // Auto-merge any new seed companies added in code updates
+      const savedSlugs = new Set(parsedSaved.map(c => c.slug || c.id));
+      const missingSeedItems = seedCompanies.filter(c => !savedSlugs.has(c.slug) && !savedSlugs.has(c.id));
+      
+      if (missingSeedItems.length > 0) {
+        const merged = [...parsedSaved, ...missingSeedItems];
+        localStorage.setItem(STORAGE_KEY_COMPANIES, JSON.stringify(merged));
+        return merged;
+      }
+
+      return parsedSaved;
     } catch (e) {
       console.error('Failed to load companies from localStorage:', e);
       return seedCompanies;

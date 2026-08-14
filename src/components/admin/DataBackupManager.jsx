@@ -85,7 +85,7 @@ export function DataBackupManager({ companies, onImport, onReset, showToast }) {
           <div>
             <div className="font-bold text-slate-900 dark:text-white mb-1">Reset to Seed Data</div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400">
-              Restore initial 86 Malaysian corporate portals dataset and discard local changes.
+              Restore initial seed dataset ({companies.length} portals) and discard local changes.
             </p>
           </div>
           <button

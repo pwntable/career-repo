@@ -50,7 +50,7 @@ export function HomeView({
               Direct Access to Official <span className="bg-gradient-to-r from-brand-600 to-indigo-600 bg-clip-text text-transparent">Career Portals</span> in Malaysia
             </h1>
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Skip third-party job boards. Connect directly with 86+ leading MNCs, GLCs, statutory bodies, and tech hubs across Kuala Lumpur, Cyberjaya, Penang, and Malaysia.
+              Skip third-party job boards. Connect directly with {companies.length}+ leading MNCs, GLCs, statutory bodies, and tech hubs across Kuala Lumpur, Cyberjaya, Penang, and Malaysia.
             </p>
           </div>
 
